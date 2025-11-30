@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Skeleton } from '@/components/ui/skeleton';
 import { Star } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -61,21 +62,20 @@ export function ReviewCard({
 }
 
 /**
- * Star Rating Component
+ * Star Rating Component with accessibility
  */
 function StarRating({ rating }: { rating: number }): JSX.Element {
+  // Clamp rating between 0 and 5
+  const clampedRating = Math.max(0, Math.min(5, rating));
+
   return (
-    <div 
-      className="flex gap-0.5" 
-      role="img" 
-      aria-label={`Rating: ${rating} out of 5 stars`}
-    >
+    <div className="flex gap-0.5" role="img" aria-label={`Rated ${clampedRating} out of 5 stars`}>
       {[1, 2, 3, 4, 5].map((star) => (
         <Star
           key={star}
           className={cn(
             'h-4 w-4',
-            star <= rating ? 'fill-yellow-400 text-yellow-400' : 'text-muted'
+            star <= clampedRating ? 'fill-yellow-400 text-yellow-400' : 'text-muted'
           )}
           aria-hidden="true"
         />
@@ -86,24 +86,25 @@ function StarRating({ rating }: { rating: number }): JSX.Element {
 
 /**
  * Review Card Skeleton
+ * Uses Skeleton primitive for consistency
  */
 export function ReviewCardSkeleton(): JSX.Element {
   return (
     <Card>
       <CardHeader>
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 animate-pulse rounded-full bg-muted"></div>
+          <Skeleton className="h-10 w-10 rounded-full" />
           <div className="flex-1 space-y-2">
-            <div className="h-4 w-24 animate-pulse rounded bg-muted"></div>
-            <div className="h-3 w-16 animate-pulse rounded bg-muted"></div>
+            <Skeleton className="h-4 w-24" />
+            <Skeleton className="h-3 w-16" />
           </div>
         </div>
       </CardHeader>
       <CardContent>
         <div className="space-y-2">
-          <div className="h-4 w-full animate-pulse rounded bg-muted"></div>
-          <div className="h-4 w-full animate-pulse rounded bg-muted"></div>
-          <div className="h-4 w-3/4 animate-pulse rounded bg-muted"></div>
+          <Skeleton className="h-4 w-full" />
+          <Skeleton className="h-4 w-full" />
+          <Skeleton className="h-4 w-3/4" />
         </div>
       </CardContent>
     </Card>

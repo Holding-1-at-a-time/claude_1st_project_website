@@ -2,25 +2,8 @@ import Link from 'next/link';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { BUSINESS_INFO, SERVICE_AREAS, BUSINESS_HOURS } from '@/lib/constants';
+import { POPULAR_SERVICES, COMPANY_LINKS, LEGAL_LINKS } from '@/config/navigation';
 import { formatPhoneHref } from '@/lib/utils';
-
-/**
- * Footer links configuration
- */
-const FOOTER_LINKS = {
-  services: [
-    { href: '/services/auto-detailing', label: 'Auto Detailing' },
-    { href: '/services/ceramic-coating', label: 'Ceramic Coating' },
-    { href: '/services/paint-correction', label: 'Paint Correction' },
-    { href: '/services/interior-deep-cleansing', label: 'Interior Detailing' },
-  ],
-  company: [
-    { href: '/about', label: 'About Us' },
-    { href: '/reviews', label: 'Customer Reviews' },
-    { href: '/contact', label: 'Contact' },
-    { href: '/booking', label: 'Book Appointment' },
-  ],
-} as const;
 
 /**
  * Footer Component (Server Component)
@@ -93,7 +76,7 @@ export function Footer(): JSX.Element {
               Popular Services
             </h3>
             <ul className="space-y-2 text-sm">
-              {FOOTER_LINKS.services.map((link) => (
+              {POPULAR_SERVICES.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -112,7 +95,7 @@ export function Footer(): JSX.Element {
               Company
             </h3>
             <ul className="space-y-2 text-sm">
-              {FOOTER_LINKS.company.map((link) => (
+              {COMPANY_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -159,12 +142,11 @@ export function Footer(): JSX.Element {
           </p>
 
           <div className="flex gap-4">
-            <Link href="/privacy" className="hover:text-primary">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:text-primary">
-              Terms of Service
-            </Link>
+            {LEGAL_LINKS.map((link) => (
+              <Link key={link.href} href={link.href} className="hover:text-primary">
+                {link.label}
+              </Link>
+            ))}
           </div>
         </div>
 
