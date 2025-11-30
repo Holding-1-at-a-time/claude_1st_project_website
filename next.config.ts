@@ -1,0 +1,68 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* Core Settings */
+  reactStrictMode: true,
+
+  /* TypeScript */
+  typescript: {
+    // Fail build on TS errors
+    ignoreBuildErrors: false,
+  },
+
+  /* ESLint */
+  eslint: {
+    // Fail build on ESLint errors
+    ignoreDuringBuilds: false,
+  },
+
+  /* Image Optimization */
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60,
+  },
+
+  /* Headers for Security & Performance */
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-DNS-Prefetch-Control',
+            value: 'on'
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN'
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff'
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'origin-when-cross-origin'
+          },
+        ],
+      },
+    ];
+  },
+
+  /* Experimental Features */
+  experimental: {
+    // Enable PPR (Partial Prerendering) when stable
+    // ppr: true,
+
+    // Optimize package imports
+    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
+  },
+
+  /* Performance */
+  compress: true,
+  poweredByHeader: false,
+};
+
+export default nextConfig;
