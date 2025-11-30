@@ -53,9 +53,10 @@ export const metadata: Metadata = {
 
 interface RootLayoutProps {
   children: React.ReactNode;
+  modal?: React.ReactNode; // Parallel route slot for @modal
 }
 
-export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
+export default function RootLayout({ children, modal }: RootLayoutProps): JSX.Element {
   // Organization Schema.org JSON-LD
   const organizationSchema = {
     '@context': 'https://schema.org',
@@ -140,7 +141,10 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          {modal}
+        </Providers>
       </body>
     </html>
   );
