@@ -10,6 +10,23 @@ import { NAV_ITEMS } from '@/config/navigation';
 import { formatPhoneHref } from '@/lib/utils';
 
 /**
+ * Main navigation items
+ */
+const NAV_ITEMS = [
+  { href: '/', label: 'Home' },
+  { href: '/services', label: 'Services' },
+  { href: '/about', label: 'About' },
+  { href: '/reviews', label: 'Reviews' },
+  { href: '/contact', label: 'Contact' },
+] as const;
+
+/**
+ * Render the site header with branding, responsive navigation, and call-to-action controls.
+ *
+ * Renders a sticky header containing the logo, a desktop navigation bar (visible on md+),
+ * call and booking buttons (visible by breakpoint), and the MobileNav sheet trigger for small screens.
+ *
+ * @returns A JSX element containing the header with logo, desktop links, contact/book actions, and the mobile menu.
  * Header Component (Client Component for mobile menu state)
  * Includes desktop and mobile navigation
  */
@@ -79,6 +96,32 @@ export function Header(): JSX.Element {
                   </p>
                 </div>
 
+/**
+ * Renders the mobile navigation sheet with branding, navigation links, contact actions, and address information.
+ *
+ * Presents a right-side slide-out sheet triggered by a menu button (hidden on md+). The sheet contains the site brand, links from NAV_ITEMS, a full-width call button, a booking button, and the business address and establishment year.
+ *
+ * @returns The mobile navigation sheet element as JSX to be embedded in the header.
+ */
+function MobileNav(): JSX.Element {
+  return (
+    <Sheet>
+      <SheetTrigger asChild>
+        <Button variant="ghost" size="sm" className="md:hidden">
+          <Menu className="h-5 w-5" />
+          <span className="sr-only">Toggle menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+        <nav className="flex flex-col gap-4">
+          <div className="mb-4 border-b border-border pb-4">
+            <Link href="/" className="text-xl font-bold text-primary">
+              One Detail At A Time
+            </Link>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Professional Auto Detailing
+            </p>
+          </div>
                 {NAV_ITEMS.map((item) => (
                   <SheetClose asChild key={item.href}>
                     <Link

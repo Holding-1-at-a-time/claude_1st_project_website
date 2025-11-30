@@ -15,8 +15,17 @@ interface ReviewCardProps {
 }
 
 /**
- * Review Card Component
- * Displays customer review with star rating
+ * Render a card displaying a customer review with avatar, metadata, star rating, and comment.
+ *
+ * @param customerName - Reviewer display name.
+ * @param customerInitial - Initials shown inside the circular avatar.
+ * @param rating - Number of filled stars (expected on a 1–5 scale).
+ * @param title - Optional review title rendered as a bold heading when provided.
+ * @param comment - Review text content.
+ * @param date - Optional date; when provided it is formatted as "Month Year" in the en-US locale.
+ * @param featured - When true, applies a highlighted primary border to the card.
+ * @param className - Optional additional CSS classes applied to the outer card.
+ * @returns The rendered review card JSX element.
  */
 export function ReviewCard({
   customerName,

@@ -6,8 +6,30 @@ import { POPULAR_SERVICES, COMPANY_LINKS, LEGAL_LINKS } from '@/config/navigatio
 import { formatPhoneHref } from '@/lib/utils';
 
 /**
- * Footer Component (Server Component)
- * Includes NAP (Name, Address, Phone) for local SEO
+ * Footer links configuration
+ */
+const FOOTER_LINKS = {
+  services: [
+    { href: '/services/auto-detailing', label: 'Auto Detailing' },
+    { href: '/services/ceramic-coating', label: 'Ceramic Coating' },
+    { href: '/services/paint-correction', label: 'Paint Correction' },
+    { href: '/services/interior-deep-cleansing', label: 'Interior Detailing' },
+  ],
+  company: [
+    { href: '/about', label: 'About Us' },
+    { href: '/reviews', label: 'Customer Reviews' },
+    { href: '/contact', label: 'Contact' },
+    { href: '/booking', label: 'Book Appointment' },
+  ],
+} as const;
+
+/**
+ * Renders the site footer containing company NAP, navigation links, service areas, hours, and SEO microdata.
+ *
+ * The footer includes structured LocalBusiness/PostalAddress markup for local SEO, lists of popular services and company links,
+ * a compact service-areas list with a link to contact for more areas, business hours, and bottom-bar links (privacy/terms).
+ *
+ * @returns The footer JSX element containing company info, navigation, service areas, hours, and SEO markup.
  */
 export function Footer(): JSX.Element {
   const currentYear = new Date().getFullYear();
