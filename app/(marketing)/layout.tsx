@@ -8,10 +8,10 @@ import { Footer } from '@/components/footer';
  */
 export default function MarketingLayout(props: LayoutProps<'/'>): JSX.Element {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">{props.children}</main>
       <Footer />
-    </>
+    </div>
   );
 }
