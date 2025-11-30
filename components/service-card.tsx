@@ -14,8 +14,19 @@ interface ServiceCardProps {
 }
 
 /**
- * Service Card Component
- * Displays a service with name, description, and link
+ * Renders a service card with an optional icon, title, description, and a "Learn More" link.
+ *
+ * Renders a Card containing an optional icon area, the service name, a short description,
+ * and a full-width button linking to `/services/{slug}`. When `featured` is true the card
+ * and button receive emphasized styling.
+ *
+ * @param slug - Path segment used to construct the service URL (appended to `/services/`)
+ * @param name - Visible title of the service
+ * @param description - Short descriptive text shown under the title
+ * @param icon - Optional icon node displayed above the title
+ * @param featured - When true, applies featured styling to the card and primary button
+ * @param className - Optional additional CSS classes applied to the outer Card
+ * @returns A Card element representing the service with a "Learn More" link to the service page
  */
 export function ServiceCard({
   slug,
@@ -55,7 +66,11 @@ export function ServiceCard({
 }
 
 /**
- * Service Card Skeleton for loading states
+ * Render a skeleton placeholder for the ServiceCard while content is loading.
+ *
+ * Renders pulsing placeholders for the icon, title, description, and action area to match the ServiceCard layout.
+ *
+ * @returns A JSX element representing the service card loading skeleton.
  */
 export function ServiceCardSkeleton(): JSX.Element {
   return (

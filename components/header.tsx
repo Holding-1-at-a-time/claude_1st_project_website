@@ -17,8 +17,12 @@ const NAV_ITEMS = [
 ] as const;
 
 /**
- * Header Component (Server Component)
- * Includes desktop and mobile navigation
+ * Render the site header with branding, responsive navigation, and call-to-action controls.
+ *
+ * Renders a sticky header containing the logo, a desktop navigation bar (visible on md+),
+ * call and booking buttons (visible by breakpoint), and the MobileNav sheet trigger for small screens.
+ *
+ * @returns A JSX element containing the header with logo, desktop links, contact/book actions, and the mobile menu.
  */
 export function Header(): JSX.Element {
   return (
@@ -74,7 +78,11 @@ export function Header(): JSX.Element {
 }
 
 /**
- * Mobile Navigation Component (Client Component)
+ * Renders the mobile navigation sheet with branding, navigation links, contact actions, and address information.
+ *
+ * Presents a right-side slide-out sheet triggered by a menu button (hidden on md+). The sheet contains the site brand, links from NAV_ITEMS, a full-width call button, a booking button, and the business address and establishment year.
+ *
+ * @returns The mobile navigation sheet element as JSX to be embedded in the header.
  */
 function MobileNav(): JSX.Element {
   return (

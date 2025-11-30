@@ -23,8 +23,12 @@ const FOOTER_LINKS = {
 } as const;
 
 /**
- * Footer Component (Server Component)
- * Includes NAP (Name, Address, Phone) for local SEO
+ * Renders the site footer containing company NAP, navigation links, service areas, hours, and SEO microdata.
+ *
+ * The footer includes structured LocalBusiness/PostalAddress markup for local SEO, lists of popular services and company links,
+ * a compact service-areas list with a link to contact for more areas, business hours, and bottom-bar links (privacy/terms).
+ *
+ * @returns The footer JSX element containing company info, navigation, service areas, hours, and SEO markup.
  */
 export function Footer(): JSX.Element {
   const currentYear = new Date().getFullYear();

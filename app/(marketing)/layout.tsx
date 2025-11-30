@@ -2,9 +2,9 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
 /**
- * Marketing Layout using Next.js 16 LayoutProps helper
- * Wraps home, about, and contact pages
- * Includes Header and Footer
+ * Layout component that wraps marketing pages with a header, main content area, and footer.
+ *
+ * @returns A JSX element containing the Header, a `main` element that renders the layout's children, and the Footer.
  */
 export default function MarketingLayout(props: LayoutProps<'/'>): JSX.Element {
   return (

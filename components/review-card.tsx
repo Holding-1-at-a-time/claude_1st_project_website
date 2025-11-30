@@ -14,8 +14,17 @@ interface ReviewCardProps {
 }
 
 /**
- * Review Card Component
- * Displays customer review with star rating
+ * Render a card displaying a customer review with avatar, metadata, star rating, and comment.
+ *
+ * @param customerName - Reviewer display name.
+ * @param customerInitial - Initials shown inside the circular avatar.
+ * @param rating - Number of filled stars (expected on a 1–5 scale).
+ * @param title - Optional review title rendered as a bold heading when provided.
+ * @param comment - Review text content.
+ * @param date - Optional date; when provided it is formatted as "Month Year" in the en-US locale.
+ * @param featured - When true, applies a highlighted primary border to the card.
+ * @param className - Optional additional CSS classes applied to the outer card.
+ * @returns The rendered review card JSX element.
  */
 export function ReviewCard({
   customerName,
@@ -61,7 +70,12 @@ export function ReviewCard({
 }
 
 /**
- * Star Rating Component
+ * Render a five-star visual rating.
+ *
+ * Stars with index less than or equal to `rating` are shown filled; higher-index stars are shown muted.
+ *
+ * @param rating - Number of stars to fill (expected 1–5; values outside this range will compare directly to star indices)
+ * @returns A JSX element containing five star icons with up to `rating` filled. 
  */
 function StarRating({ rating }: { rating: number }): JSX.Element {
   return (
@@ -80,7 +94,11 @@ function StarRating({ rating }: { rating: number }): JSX.Element {
 }
 
 /**
- * Review Card Skeleton
+ * Render a skeleton placeholder that mirrors the ReviewCard layout for loading states.
+ *
+ * Renders animated avatar and text bars to indicate where the review header and content will appear.
+ *
+ * @returns A JSX element containing the review card skeleton used while review data is loading.
  */
 export function ReviewCardSkeleton(): JSX.Element {
   return (
