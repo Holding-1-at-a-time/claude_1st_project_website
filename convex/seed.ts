@@ -119,14 +119,15 @@ async function seedPillarPages(ctx: any): Promise<void> {
   const now = Date.now();
 
   const pillarPages = [
+    // Car Detailing Service Category (12 services)
     {
       slug: 'auto-detailing',
       serviceName: 'Auto Detailing',
       serviceType: 'AutoRepair',
-      title: 'Professional Auto Detailing San Antonio | One Detail At A Time',
+      title: 'IDA Certified Auto Detailing San Antonio, TX | One Detail At A Time',
       metaDescription:
         'Expert auto detailing in San Antonio. Interior & exterior detailing, paint correction, ceramic coating. IDA Certified. 5-star rated. Call (726) 207-1007 for a quote.',
-      h1: 'Professional Auto Detailing Services in San Antonio, TX',
+      h1: 'IDA Certified Auto Detailing Services in San Antonio, TX',
       introContent: `<p>One Detail At A Time LLC is San Antonio's premier auto detailing service, serving the greater San Antonio area since 2019. Our IDA-certified technicians specialize in transforming your vehicle with meticulous attention to detail and professional-grade products.</p>`,
       mainContent: `<h2>Comprehensive Auto Detailing Services</h2>
 <p>Our full-service auto detailing includes both interior and exterior treatments designed to restore your vehicle's showroom shine. We use only premium products and proven techniques to deliver exceptional results every time.</p>
@@ -188,6 +189,1135 @@ async function seedPillarPages(ctx: any): Promise<void> {
           question: 'How often should I get my car detailed?',
           answer:
             'We recommend a full detail every 3-6 months depending on usage. Regular maintenance washes every 2 weeks help maintain the protective coatings and keep your vehicle looking great.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'auto-interior-vacuuming',
+      serviceName: 'Auto Interior Vacuuming',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Auto Interior Vacuuming San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional auto interior vacuuming in San Antonio. Deep carpet cleaning, upholstery vacuuming, pet hair removal. IDA Certified. Mobile service available. Call (726) 207-1007.',
+      h1: 'Professional Auto Interior Vacuuming in San Antonio',
+      introContent: `<p>Keep your vehicle's interior spotless with our professional vacuuming service. Our IDA-certified technicians use commercial-grade equipment to deep clean carpets, seats, and hard-to-reach areas, removing dirt, debris, and pet hair effectively.</p>`,
+      mainContent: `<h2>Comprehensive Interior Vacuuming</h2>
+<p>Our thorough vacuuming service goes beyond a quick once-over. We use professional equipment and techniques to ensure every surface is completely cleaned.</p>
+
+<h3>Complete Carpet Cleaning</h3>
+<p>We vacuum all carpet areas including floor mats, under seats, and trunk carpeting. Our high-powered vacuum extractors remove embedded dirt that regular vacuums miss.</p>
+
+<h3>Upholstery Vacuuming</h3>
+<p>Fabric and leather seats receive careful attention with appropriate attachments to lift dirt from seams and crevices without damaging materials.</p>
+
+<h3>Hard-to-Reach Areas</h3>
+<ul>
+  <li>Between and under seats</li>
+  <li>Center console compartments</li>
+  <li>Door pockets and map pockets</li>
+  <li>Dashboard vents and crevices</li>
+  <li>Trunk and cargo areas</li>
+</ul>
+
+<h2>Pet Hair Removal Specialist</h2>
+<p>Pet hair requires specialized tools and techniques. We use rubber brushes, pet hair stones, and high-suction vacuums to completely remove pet hair from all surfaces.</p>
+
+<h2>Commercial-Grade Equipment</h2>
+<p>Our professional vacuum systems provide significantly more suction power than household vacuums, ensuring deep cleaning that removes allergens, dust mites, and embedded particles.</p>
+
+<h2>Mobile Vacuuming Service</h2>
+<p>We bring our professional equipment to your San Antonio location for convenient service at home, office, or workplace.</p>`,
+      keywords: [
+        'auto interior vacuuming San Antonio',
+        'car vacuuming service',
+        'pet hair removal car',
+        'professional car vacuum',
+        'mobile car vacuuming',
+        'deep carpet cleaning car',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
+      faqs: [
+        {
+          question: 'Can you remove all pet hair from my car?',
+          answer:
+            'Yes! We specialize in pet hair removal using commercial tools specifically designed for this purpose. Our rubber brushes and high-suction vacuums remove pet hair that regular vacuums leave behind.',
+        },
+        {
+          question: 'How long does interior vacuuming take?',
+          answer:
+            'A thorough vacuuming typically takes 30-45 minutes for most vehicles. Larger vehicles or those with heavy pet hair may take up to an hour.',
+        },
+        {
+          question: 'Do you vacuum the trunk area?',
+          answer:
+            'Yes, our service includes vacuuming the entire interior including trunk, cargo areas, and under all removable floor mats.',
+        },
+        {
+          question: 'Is this safe for leather seats?',
+          answer:
+            'Absolutely. We use soft brush attachments designed for leather that lift dirt without scratching or damaging the surface.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'car-waxing',
+      serviceName: 'Car Waxing',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Car Waxing San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional car waxing in San Antonio. Premium carnauba wax, synthetic sealants, long-lasting protection. IDA Certified. Enhance shine and protect paint. Call (726) 207-1007.',
+      h1: 'Professional Car Waxing Services in San Antonio',
+      introContent: `<p>Protect and enhance your vehicle's paint with professional car waxing. Our IDA-certified technicians use premium waxes and sealants to create a deep, lasting shine while providing crucial protection against UV rays, environmental contaminants, and the elements.</p>`,
+      mainContent: `<h2>Premium Car Waxing Services</h2>
+<p>Car waxing is essential for maintaining your vehicle's appearance and protecting the paint from damage. We offer professional-grade products and application techniques that deliver superior results.</p>
+
+<h3>Benefits of Professional Waxing</h3>
+<ul>
+  <li>UV protection prevents paint fading and oxidation</li>
+  <li>Hydrophobic barrier repels water and contaminants</li>
+  <li>Enhanced gloss and depth of color</li>
+  <li>Protection against bird droppings, tree sap, and road salt</li>
+  <li>Easier washing and maintenance</li>
+  <li>Smooth, slick paint surface</li>
+</ul>
+
+<h2>Wax Options Available</h2>
+<h3>Premium Carnauba Wax</h3>
+<p>Natural Brazilian carnauba wax provides the warmest, deepest shine. Perfect for show cars and enthusiasts who want the best visual results. Lasts 2-3 months with proper care.</p>
+
+<h3>Synthetic Sealant</h3>
+<p>Long-lasting polymer protection that bonds to paint at a molecular level. Provides 4-6 months of protection with excellent water beading and durability.</p>
+
+<h3>Hybrid Wax/Sealant</h3>
+<p>Combines the warm glow of carnauba with the durability of synthetic polymers. Best of both worlds for appearance and longevity.</p>
+
+<h2>Our Waxing Process</h2>
+<p>Proper waxing requires clean, contaminant-free paint. Our complete process ensures maximum results:</p>
+<ol>
+  <li>Thorough hand wash to remove surface dirt</li>
+  <li>Clay bar treatment to remove embedded contaminants</li>
+  <li>Paint inspection and light polishing if needed</li>
+  <li>Hand application of premium wax</li>
+  <li>Proper curing time for optimal bonding</li>
+  <li>Buffing to reveal deep gloss</li>
+</ol>
+
+<h2>Hand Application vs. Machine</h2>
+<p>We use both hand and machine application depending on the product and desired results. Machine application ensures even coverage, while hand application works better for intricate areas and curved surfaces.</p>
+
+<h2>Waxing Frequency</h2>
+<p>In San Antonio's intense sun and heat, we recommend waxing every 2-3 months to maintain protection. Regular waxing prevents paint damage and maintains that showroom shine.</p>`,
+      keywords: [
+        'car waxing San Antonio',
+        'professional car wax',
+        'carnauba wax',
+        'paint sealant',
+        'car wax near me',
+        'auto waxing service',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
+      faqs: [
+        {
+          question: 'How long does car wax last?',
+          answer:
+            'Carnauba wax lasts 2-3 months, while synthetic sealants can last 4-6 months. Longevity depends on environmental exposure, washing frequency, and product quality.',
+        },
+        {
+          question: 'Should I wax or get ceramic coating?',
+          answer:
+            'Wax is perfect for regular maintenance and costs less. Ceramic coating lasts 2-5 years but costs more upfront. We can help you decide based on your budget and goals.',
+        },
+        {
+          question: 'Can you wax over ceramic coating?',
+          answer:
+            'No, wax isn\'t necessary over ceramic coating and can actually reduce its hydrophobic properties. Ceramic coatings provide superior protection and don\'t need wax.',
+        },
+        {
+          question: 'How is professional waxing different from DIY?',
+          answer:
+            'We use professional-grade products, proper surface preparation including clay bar treatment, and proven application techniques. This ensures better coverage, longer life, and superior results.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'clay-bar-treatment',
+      serviceName: 'Clay Bar Treatment',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Clay Bar Treatment San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional clay bar treatment in San Antonio. Remove embedded contaminants, overspray, brake dust. Smooth-as-glass finish. IDA Certified. Call (726) 207-1007.',
+      h1: 'Professional Clay Bar Treatment in San Antonio',
+      introContent: `<p>Experience the smoothness of glass with our professional clay bar treatment. This essential service removes embedded contaminants that washing can't touch, preparing your paint for waxing, sealant, or ceramic coating while restoring that perfectly smooth finish.</p>`,
+      mainContent: `<h2>What is Clay Bar Treatment?</h2>
+<p>Clay bar treatment uses a specially formulated detailing clay to safely remove bonded surface contaminants from your vehicle's paint, glass, and wheels. These contaminants can't be removed by washing alone.</p>
+
+<h2>Contaminants We Remove</h2>
+<ul>
+  <li>Industrial fallout and rail dust</li>
+  <li>Brake dust bonded to paint</li>
+  <li>Tree sap and tar spots</li>
+  <li>Overspray (paint, concrete)</li>
+  <li>Water spots and mineral deposits</li>
+  <li>Road grime and pollution residue</li>
+  <li>Bug residue</li>
+</ul>
+
+<h2>Why Clay Bar Treatment is Essential</h2>
+<h3>Smooth Surface</h3>
+<p>After clay bar treatment, your paint feels smooth as glass. The rough, gritty texture from contaminants is completely gone.</p>
+
+<h3>Better Wax/Sealant Adhesion</h3>
+<p>Wax and sealants can't bond properly to contaminated paint. Clay bar treatment ensures maximum adhesion and longevity of protective coatings.</p>
+
+<h3>Improved Appearance</h3>
+<p>Removing contaminants allows light to reflect properly off your paint, enhancing gloss and color depth.</p>
+
+<h3>Required Before Paint Correction</h3>
+<p>Polishing contaminated paint will grind contaminants into the clear coat, causing scratches. Clay bar treatment is mandatory before any correction work.</p>
+
+<h2>Our Clay Bar Process</h2>
+<ol>
+  <li><strong>Thorough Wash:</strong> Complete hand wash to remove loose dirt</li>
+  <li><strong>Surface Assessment:</strong> Feel test to identify contamination levels</li>
+  <li><strong>Panel-by-Panel Treatment:</strong> Work systematically across entire vehicle</li>
+  <li><strong>Lubrication:</strong> Use proper clay lubricant to prevent marring</li>
+  <li><strong>Frequent Clay Folding:</strong> Expose fresh clay surface regularly</li>
+  <li><strong>Final Wipe Down:</strong> Remove all residue</li>
+  <li><strong>Inspection:</strong> Feel test confirms glass-smooth finish</li>
+</ol>
+
+<h2>Professional vs. DIY Clay Bar</h2>
+<p>While DIY clay bar kits exist, professional treatment ensures:</p>
+<ul>
+  <li>High-quality professional-grade clay</li>
+  <li>Proper technique that won't scratch paint</li>
+  <li>Thorough coverage of entire vehicle</li>
+  <li>Appropriate clay grade for contamination level</li>
+  <li>Proper lubrication to prevent marring</li>
+</ul>
+
+<h2>When Do You Need Clay Bar Treatment?</h2>
+<p>Run your hand over your paint after washing. If it feels rough or gritty, you need clay bar treatment. We recommend it every 6 months in San Antonio, or before any waxing or coating application.</p>`,
+      keywords: [
+        'clay bar treatment San Antonio',
+        'paint decontamination',
+        'remove paint contaminants',
+        'clay bar service',
+        'car clay bar near me',
+        'paint surface preparation',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
+      faqs: [
+        {
+          question: 'Will clay bar remove scratches?',
+          answer:
+            'No, clay bar only removes bonded surface contaminants. Scratches in the clear coat require paint correction (polishing/compounding) to remove.',
+        },
+        {
+          question: 'How often should I get clay bar treatment?',
+          answer:
+            'Every 6 months is ideal for San Antonio vehicles. More frequently if you park near industrial areas, airports, or train tracks where fallout is heavy.',
+        },
+        {
+          question: 'Is clay bar treatment safe for my paint?',
+          answer:
+            'Yes, when done properly with adequate lubrication. Our IDA-certified technicians use proper techniques and professional products that won\'t damage your paint.',
+        },
+        {
+          question: 'Do I need to wax after clay bar treatment?',
+          answer:
+            'Yes, clay bar removes your existing wax along with contaminants. We recommend immediately following clay bar treatment with wax, sealant, or ceramic coating for protection.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'engine-detailing',
+      serviceName: 'Engine Detailing',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Engine Detailing San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional engine bay detailing in San Antonio. Safe steam cleaning, degreasing, dressing. Show-quality results. IDA certified. Call (726) 207-1007.',
+      h1: 'Professional Engine Bay Detailing in San Antonio',
+      introContent: `<p>Transform your engine bay with professional detailing. Our careful process safely removes grease, grime, and buildup while protecting sensitive components. Perfect for show cars or maintaining your investment.</p>`,
+      mainContent: `<h2>Engine Detailing Benefits</h2>
+<h3>Maintenance</h3>
+<p>A clean engine bay makes it easier to spot leaks, worn belts, and other maintenance issues before they become serious problems.</p>
+
+<h3>Resale Value</h3>
+<p>A detailed engine bay shows pride of ownership and can significantly increase resale value. Buyers notice a clean, well-maintained engine compartment.</p>
+
+<h3>Cooling Efficiency</h3>
+<p>Removing built-up grime and debris can improve cooling system efficiency by allowing better airflow.</p>
+
+<h3>Fire Prevention</h3>
+<p>Oil and grease buildup poses a fire risk. Regular engine detailing removes flammable materials from hot components.</p>
+
+<h2>Our Safe Engine Detailing Process</h2>
+<h3>1. Pre-Clean Inspection</h3>
+<p>We identify sensitive electrical components and ensure everything is cool before starting. Batteries, alternators, and exposed electronics are protected.</p>
+
+<h3>2. Pre-Treatment</h3>
+<p>Professional degreaser applied to heavily soiled areas. Allowed to dwell and break down grease and oil buildup.</p>
+
+<h3>3. Gentle Washing</h3>
+<p>Low-pressure rinse or steam cleaning (preferred). We never use high-pressure washers that can force water into electrical components.</p>
+
+<h3>4. Detailing</h3>
+<p>Brushes and specialized tools clean hard-to-reach areas. Attention to every wire, hose, and component.</p>
+
+<h3>5. Drying</h3>
+<p>Compressed air removes water from sensitive areas. Complete air drying before applying dressings.</p>
+
+<h3>6. Protection & Dressing</h3>
+<p>UV protectant applied to plastic and rubber components. Engine dressing for a factory-fresh appearance.</p>
+
+<h2>Safe for Modern Vehicles</h2>
+<p>Our process is completely safe for modern vehicles with complex electronics. We use steam cleaning and low-pressure methods specifically designed for sensitive components.</p>
+
+<h2>Show-Quality Results</h2>
+<p>Whether you're preparing for a car show or just want a pristine engine bay, we deliver concours-level results.</p>`,
+      keywords: [
+        'engine detailing San Antonio',
+        'engine bay cleaning',
+        'engine degreasing',
+        'clean engine compartment',
+        'engine bay detailing near me',
+        'professional engine cleaning',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'North Side', 'Medical Center'],
+      faqs: [
+        {
+          question: 'Is engine cleaning safe for modern cars with lots of electronics?',
+          answer:
+            'Yes! We use low-pressure methods and steam cleaning specifically designed for modern vehicles. Sensitive components are protected, and we never use high-pressure washers that can force water into electrical connections.',
+        },
+        {
+          question: 'How often should I have my engine detailed?',
+          answer:
+            'For most vehicles, annual engine detailing is sufficient. Performance and show cars may benefit from more frequent detailing every 6 months.',
+        },
+        {
+          question: 'Can engine detailing find leaks?',
+          answer:
+            'Yes! A clean engine makes it much easier to spot new leaks. After detailing, any fresh oil or fluid will be immediately visible against the clean surfaces.',
+        },
+        {
+          question: 'Will you damage any components?',
+          answer:
+            'No. Our technicians are trained to identify and protect sensitive components. We use appropriate cleaning methods for each area of the engine bay.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'full-body-wash',
+      serviceName: 'Full Body Wash',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Full Body Wash San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional full body wash in San Antonio. Premium hand wash, two-bucket method, safe for all finishes. IDA Certified. Protect your paint. Call (726) 207-1007.',
+      h1: 'Professional Full Body Wash Services in San Antonio',
+      introContent: `<p>Experience the difference of a proper full body wash. Our meticulous hand wash process safely removes dirt and grime while protecting your vehicle's finish. We use premium products and proven techniques that automatic car washes simply can't match.</p>`,
+      mainContent: `<h2>Why Hand Washing is Superior</h2>
+<p>Automatic car washes use harsh brushes that scratch and swirl your paint. Our hand wash process is completely safe and far more effective at removing contamination.</p>
+
+<h2>Our Two-Bucket Hand Wash Process</h2>
+<h3>Pre-Wash Preparation</h3>
+<ul>
+  <li>Wheel and tire cleaning with dedicated brushes</li>
+  <li>Wheel well rinse to remove loose debris</li>
+  <li>Bug and tar removal from front end</li>
+  <li>Pre-soak with pH-neutral foam</li>
+</ul>
+
+<h3>The Two-Bucket Method</h3>
+<p>This professional technique prevents scratches by keeping wash media clean:</p>
+<ul>
+  <li>Bucket 1: Fresh soapy water with premium pH-neutral shampoo</li>
+  <li>Bucket 2: Clean rinse water to remove dirt from mitt</li>
+  <li>Grit guards in both buckets trap dirt at bottom</li>
+  <li>Premium microfiber wash mitts (never sponges or brushes)</li>
+</ul>
+
+<h3>Proper Washing Technique</h3>
+<ul>
+  <li>Top-to-bottom approach (cleanest to dirtiest)</li>
+  <li>Straight-line motions (never circular)</li>
+  <li>Frequent mitt rinsing in clean water bucket</li>
+  <li>Separate mitt for lower panels and wheels</li>
+</ul>
+
+<h3>Thorough Rinsing</h3>
+<ul>
+  <li>Complete rinse to remove all soap</li>
+  <li>Pay special attention to crevices and trim</li>
+  <li>Door jambs and edges included</li>
+</ul>
+
+<h3>Proper Drying</h3>
+<ul>
+  <li>Filtered water or deionized water (when available) for spot-free finish</li>
+  <li>Plush microfiber drying towels</li>
+  <li>Compressed air for mirrors, badges, and crevices</li>
+  <li>No water spots or streaks</li>
+</ul>
+
+<h2>Final Touches</h2>
+<ul>
+  <li>Tire dressing application</li>
+  <li>Window and glass cleaning (exterior)</li>
+  <li>Chrome and trim wiped down</li>
+  <li>Final inspection for any missed spots</li>
+</ul>
+
+<h2>Safe for All Finishes</h2>
+<p>Our pH-neutral products and soft microfiber materials are completely safe for:</p>
+<ul>
+  <li>Ceramic coatings</li>
+  <li>Paint protection film (PPF)</li>
+  <li>Vinyl wraps</li>
+  <li>All paint types (clear coat, single stage, matte)</li>
+  <li>Polished metals and chrome</li>
+</ul>
+
+<h2>Maintenance Wash Programs</h2>
+<p>Keep your vehicle looking its best with regular washing. We recommend every 2 weeks to maintain protection and prevent contamination buildup.</p>`,
+      keywords: [
+        'full body wash San Antonio',
+        'professional car wash',
+        'hand wash car',
+        'two bucket wash',
+        'safe car wash',
+        'car wash near me',
+      ],
+      neighborhoods: ['Stone Oak', 'Northeast Side', 'North Side', 'Medical Center', 'Alamo Heights'],
+      faqs: [
+        {
+          question: 'Why is hand washing better than automatic car washes?',
+          answer:
+            'Hand washing allows us to carefully clean each panel without harsh brushes that cause scratches and swirls. We can address specific contaminants and adjust pressure for delicate areas, ensuring your paint stays perfect.',
+        },
+        {
+          question: 'How long does a full body wash take?',
+          answer:
+            'A thorough hand wash typically takes 45-60 minutes. We never rush the process because proper technique takes time.',
+        },
+        {
+          question: 'Do you offer mobile washing?',
+          answer:
+            'Yes! We bring all necessary water, equipment, and supplies to your San Antonio location for convenient on-site washing.',
+        },
+        {
+          question: 'Is this safe for ceramic coatings?',
+          answer:
+            'Absolutely. Our pH-neutral soaps and soft microfiber materials are specifically chosen to be safe for ceramic coatings and won\'t strip or damage the protection.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'headlight-polishing',
+      serviceName: 'Headlight Polishing',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Headlight Polishing San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional headlight polishing in San Antonio. Remove oxidation, yellowing, haze. Restore clarity and brightness. UV protection. Call (726) 207-1007.',
+      h1: 'Professional Headlight Polishing in San Antonio, TX',
+      introContent: `<p>Restore clarity and safety to your vehicle with professional headlight polishing. Our multi-stage process removes oxidation, yellowing, and haze while applying UV protection to prevent future damage.</p>`,
+      mainContent: `<h2>Why Polish Your Headlights?</h2>
+<h3>Safety</h3>
+<p>Foggy or yellowed headlights can reduce visibility by up to 80%, creating a serious safety hazard for night driving. Polishing restores full brightness and beam pattern.</p>
+
+<h3>Appearance</h3>
+<p>Cloudy headlights make even new vehicles look old and neglected. Crystal-clear headlights dramatically improve your vehicle's appearance.</p>
+
+<h3>Cost-Effective</h3>
+<p>Headlight polishing costs a fraction of replacement. New headlight assemblies can cost $200-$1000+ per side, while polishing is much more affordable.</p>
+
+<h2>Our Polishing Process</h2>
+<h3>1. Cleaning & Masking</h3>
+<p>Thorough cleaning and careful masking of surrounding paint to prevent damage during restoration.</p>
+
+<h3>2. Wet Sanding</h3>
+<p>Progressive wet sanding with 400, 800, 1500, and 2000-grit sandpaper removes oxidation and damaged layers.</p>
+
+<h3>3. Machine Polishing</h3>
+<p>Multi-stage polishing compounds restore optical clarity and remove sanding marks.</p>
+
+<h3>4. UV Protective Coating</h3>
+<p>Professional-grade UV sealant prevents future oxidation and yellowing. Lasts 1-3 years with proper maintenance.</p>
+
+<h2>What Causes Headlight Damage?</h2>
+<ul>
+  <li>UV radiation from sunlight</li>
+  <li>Oxidation from exposure to air</li>
+  <li>Road debris impact</li>
+  <li>Chemical exposure (cleaners, salt)</li>
+  <li>Heat from halogen bulbs</li>
+</ul>
+
+<h2>Results You Can See</h2>
+<p>Our restoration process typically improves clarity by 95%+ on plastic headlights. Results are immediate and dramatic - like upgrading to new headlights.</p>
+
+<h2>Maintenance Tips</h2>
+<ul>
+  <li>Wash headlights regularly with pH-neutral soap</li>
+  <li>Park in shade when possible</li>
+  <li>Reapply UV sealant every 12-18 months</li>
+  <li>Avoid harsh cleaners and abrasives</li>
+</ul>`,
+      keywords: [
+        'headlight polishing San Antonio',
+        'headlight restoration',
+        'clear foggy headlights',
+        'headlight cleaning',
+        'yellow headlight repair',
+        'restore headlights near me',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Northwest Side', 'North Side', 'Medical Center'],
+      faqs: [
+        {
+          question: 'How long does headlight polishing take?',
+          answer:
+            'Both headlights typically take 1-2 hours to fully restore depending on the level of oxidation and damage.',
+        },
+        {
+          question: 'How long will the restoration last?',
+          answer:
+            'With our UV protective coating, restoration typically lasts 1-3 years. Longevity depends on UV exposure and maintenance. Reapplication of UV sealant extends life.',
+        },
+        {
+          question: 'Can severely damaged headlights be polished?',
+          answer:
+            'Most plastic headlights can be restored unless they have deep cracks or internal damage. We assess each headlight and provide honest recommendations.',
+        },
+        {
+          question: 'Will polishing work on glass headlights?',
+          answer:
+            'Glass headlights don\'t oxidize like plastic, but we can polish them if scratched. Most modern vehicles have plastic/polycarbonate headlights which respond excellently to polishing.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'interior-scenting',
+      serviceName: 'Interior Scenting',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Interior Scenting San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional interior scenting in San Antonio. Long-lasting fragrances, odor elimination, custom scents. IDA Certified. Fresh-smelling interior. Call (726) 207-1007.',
+      h1: 'Professional Interior Scenting Services in San Antonio',
+      introContent: `<p>Transform your vehicle's interior atmosphere with our professional scenting service. We use premium, long-lasting fragrances that eliminate odors and create a pleasant driving environment without overwhelming artificial scents.</p>`,
+      mainContent: `<h2>Professional Interior Scenting</h2>
+<p>Unlike cheap air fresheners that mask odors temporarily, our professional scenting service addresses odors at the source and applies long-lasting, pleasant fragrances.</p>
+
+<h2>Our Scenting Process</h2>
+<h3>1. Odor Elimination First</h3>
+<p>Before applying fragrance, we identify and eliminate any existing odors:</p>
+<ul>
+  <li>Deep cleaning of carpets and upholstery</li>
+  <li>HVAC system deodorizing</li>
+  <li>Enzyme treatment for organic odors</li>
+  <li>Ozone treatment if needed for severe odors</li>
+</ul>
+
+<h3>2. Fragrance Selection</h3>
+<p>Choose from our curated selection of professional automotive fragrances:</p>
+<ul>
+  <li><strong>New Car:</strong> That fresh, clean new vehicle scent</li>
+  <li><strong>Leather:</strong> Rich, sophisticated leather aroma</li>
+  <li><strong>Ocean Breeze:</strong> Fresh, clean aquatic scent</li>
+  <li><strong>Citrus:</strong> Bright, energizing citrus fragrance</li>
+  <li><strong>Vanilla:</strong> Warm, comforting vanilla notes</li>
+  <li><strong>Cedar:</strong> Natural, woody fragrance</li>
+  <li><strong>Coconut:</strong> Tropical, relaxing scent</li>
+  <li><strong>Custom:</strong> We can source specialty fragrances</li>
+</ul>
+
+<h3>3. Professional Application</h3>
+<p>We use professional scenting methods that provide long-lasting results:</p>
+<ul>
+  <li>HVAC system scenting for even distribution</li>
+  <li>Under-seat placement of professional scent diffusers</li>
+  <li>Fabric and carpet treatment with microencapsulated fragrances</li>
+  <li>Vent clip installation for continuous freshness</li>
+</ul>
+
+<h2>Scent Intensity Options</h2>
+<h3>Subtle</h3>
+<p>Barely noticeable fresh scent. Perfect for those sensitive to fragrances.</p>
+
+<h3>Medium (Recommended)</h3>
+<p>Pleasant fragrance that's noticeable but not overwhelming. Most popular option.</p>
+
+<h3>Strong</h3>
+<p>Prominent fragrance for those who want maximum scent impact.</p>
+
+<h2>Long-Lasting Results</h2>
+<p>Our professional scenting lasts 30-90 days depending on usage and ventilation. We use slow-release technology that provides consistent fragrance over time.</p>
+
+<h2>Perfect Additions</h2>
+<p>Interior scenting pairs perfectly with:</p>
+<ul>
+  <li>Interior deep cleaning</li>
+  <li>Carpet shampooing</li>
+  <li>Seat treatment</li>
+  <li>Full interior detailing</li>
+</ul>`,
+      keywords: [
+        'interior scenting San Antonio',
+        'car fragrance',
+        'auto scent service',
+        'new car smell',
+        'vehicle air freshener',
+        'professional car scenting',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
+      faqs: [
+        {
+          question: 'How long does interior scenting last?',
+          answer:
+            'Our professional scenting typically lasts 30-90 days depending on usage, ventilation, and climate. We use slow-release technology for consistent fragrance.',
+        },
+        {
+          question: 'Will the scent be overpowering?',
+          answer:
+            'No. We offer three intensity levels and most clients choose medium. The scent is pleasant and noticeable without being overwhelming. We avoid cheap, artificial-smelling products.',
+        },
+        {
+          question: 'Can you remove existing odors before scenting?',
+          answer:
+            'Yes! We always address odors at the source before applying fragrance. This includes deep cleaning, enzyme treatments, and ozone if needed.',
+        },
+        {
+          question: 'Is the scent safe for people with allergies?',
+          answer:
+            'We use high-quality fragrances, but those with severe fragrance sensitivities should inform us. We can use hypoallergenic or fragrance-free odor elimination only.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'paint-repair',
+      serviceName: 'Paint Repair',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Paint Repair San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional paint repair in San Antonio. Touch-up, scratch repair, chip repair. IDA Certified. Restore your vehicle\'s finish. Call (726) 207-1007.',
+      h1: 'Professional Paint Repair Services in San Antonio',
+      introContent: `<p>Restore your vehicle's finish with our professional paint repair services. From minor touch-ups to more extensive damage repair, our IDA-certified technicians deliver seamless results that blend perfectly with your existing paint.</p>`,
+      mainContent: `<h2>Paint Damage We Repair</h2>
+<ul>
+  <li>Rock chips and stone chips</li>
+  <li>Parking lot scratches and dings</li>
+  <li>Door edge chips</li>
+  <li>Key scratches and vandalism</li>
+  <li>Paint transfer from other vehicles</li>
+  <li>Clear coat damage</li>
+  <li>Minor collision damage</li>
+  <li>Rust spots (after treatment)</li>
+</ul>
+
+<h2>Our Paint Repair Process</h2>
+<h3>1. Damage Assessment</h3>
+<p>We inspect the damage to determine the best repair approach:</p>
+<ul>
+  <li>Measure paint depth to assess damage severity</li>
+  <li>Identify paint code for color matching</li>
+  <li>Determine if repair, touch-up, or refinish is needed</li>
+  <li>Check for rust or corrosion underneath</li>
+</ul>
+
+<h3>2. Surface Preparation</h3>
+<p>Proper prep ensures long-lasting repairs:</p>
+<ul>
+  <li>Clean and degrease repair area</li>
+  <li>Rust treatment if applicable</li>
+  <li>Sanding to create proper adhesion surface</li>
+  <li>Masking of surrounding areas</li>
+</ul>
+
+<h3>3. Repair Application</h3>
+<h4>For Minor Chips (Touch-Up)</h4>
+<ul>
+  <li>Color-matched touch-up paint application</li>
+  <li>Multiple thin layers for proper coverage</li>
+  <li>Allow proper dry time between coats</li>
+  <li>Clear coat application for protection and gloss</li>
+</ul>
+
+<h4>For Scratches (Paint and Polish)</h4>
+<ul>
+  <li>Fill deep scratches with matching paint</li>
+  <li>Level with ultra-fine sanding</li>
+  <li>Machine polishing to blend repair</li>
+  <li>Clear coat and final polish</li>
+</ul>
+
+<h4>For Larger Damage (Panel Repair)</h4>
+<ul>
+  <li>Professional spray application</li>
+  <li>Multiple base coat layers</li>
+  <li>Clear coat application</li>
+  <li>Color blending into surrounding areas</li>
+  <li>Final buffing and polishing</li>
+</ul>
+
+<h3>4. Finishing</h3>
+<ul>
+  <li>Wet sanding for smooth finish (if needed)</li>
+  <li>Machine polishing to match surrounding paint</li>
+  <li>Inspection under various lighting</li>
+  <li>Protective wax or sealant application</li>
+</ul>
+
+<h2>Color Matching Expertise</h2>
+<p>We use your vehicle's paint code and professional color matching systems to ensure perfect color match. Multi-stage and tri-coat paints receive special attention for accurate matching.</p>
+
+<h2>Types of Paint We Work With</h2>
+<ul>
+  <li>Solid colors</li>
+  <li>Metallic paints</li>
+  <li>Pearl finishes</li>
+  <li>Tri-coat/multi-stage paints</li>
+  <li>Matte and satin finishes</li>
+</ul>
+
+<h2>When to Repair vs. Refinish</h2>
+<h3>Touch-Up Repair (Minor Damage)</h3>
+<p>Best for small chips, minor scratches, and isolated damage. Cost-effective and quick.</p>
+
+<h3>Panel Refinish (Extensive Damage)</h3>
+<p>Better for large scratches, multiple chips, or when damage covers significant area. Provides like-new results.</p>`,
+      keywords: [
+        'paint repair San Antonio',
+        'scratch repair',
+        'chip repair',
+        'touch-up paint',
+        'automotive paint repair',
+        'car paint fix near me',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'North Side', 'Downtown'],
+      faqs: [
+        {
+          question: 'Will the paint repair match my car color exactly?',
+          answer:
+            'We use your vehicle\'s factory paint code and professional color matching to ensure accurate color match. Most repairs are virtually invisible when complete.',
+        },
+        {
+          question: 'How long does paint repair take?',
+          answer:
+            'Minor touch-ups take 1-2 hours. Larger repairs requiring spray application and blending may take 1-3 days for proper curing.',
+        },
+        {
+          question: 'Should I repair chips right away?',
+          answer:
+            'Yes. Exposed metal will rust quickly, especially in San Antonio\'s climate. Repairing chips promptly prevents rust and more expensive repairs later.',
+        },
+        {
+          question: 'Can you repair scratches down to bare metal?',
+          answer:
+            'Yes. We treat any rust, apply primer, base coat, and clear coat to properly repair deep scratches and restore protection.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'seat-shampooing',
+      serviceName: 'Seat Shampooing',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Seat Shampooing San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional seat shampooing in San Antonio. Deep clean fabric and upholstery, stain removal, odor elimination. IDA Certified. Call (726) 207-1007.',
+      h1: 'Professional Seat Shampooing Services in San Antonio',
+      introContent: `<p>Restore your vehicle's seats to like-new condition with our professional shampooing service. We use commercial-grade extraction equipment and professional cleaners to deep clean fabric and upholstery, removing stains, odors, and embedded dirt.</p>`,
+      mainContent: `<h2>Deep Seat Cleaning</h2>
+<p>Regular vacuuming only removes surface dirt. Our professional shampooing penetrates deep into fibers to extract embedded soil, oils, and contaminants.</p>
+
+<h2>Our Shampooing Process</h2>
+<h3>1. Pre-Treatment</h3>
+<ul>
+  <li>Thorough vacuuming to remove loose dirt</li>
+  <li>Inspection for stains and heavy soiling</li>
+  <li>Pre-treatment of stains with specialized cleaners</li>
+  <li>Agitation to break up embedded dirt</li>
+</ul>
+
+<h3>2. Hot Water Extraction</h3>
+<p>We use professional-grade extraction equipment (similar to carpet cleaners but designed for automotive use):</p>
+<ul>
+  <li>Hot water and professional upholstery shampoo</li>
+  <li>High-pressure injection deep into fabric</li>
+  <li>Immediate extraction removes dirt and water</li>
+  <li>Multiple passes for heavily soiled areas</li>
+</ul>
+
+<h3>3. Stain Treatment</h3>
+<p>Targeted treatment for common stains:</p>
+<ul>
+  <li><strong>Food and drinks:</strong> Enzyme cleaners break down organic matter</li>
+  <li><strong>Grease and oil:</strong> Degreasing agents lift petroleum stains</li>
+  <li><strong>Ink and dye:</strong> Solvent-based removers</li>
+  <li><strong>Pet accidents:</strong> Enzyme treatments neutralize odors</li>
+</ul>
+
+<h3>4. Deodorizing</h3>
+<ul>
+  <li>Odor-neutralizing agents applied during shampooing</li>
+  <li>Fabric refresher for pleasant scent</li>
+  <li>Antimicrobial treatment available for bacteria/mold concerns</li>
+</ul>
+
+<h3>5. Drying & Grooming</h3>
+<ul>
+  <li>High-powered air movers for faster drying</li>
+  <li>Grooming brush to restore nap direction</li>
+  <li>Final inspection and touch-up if needed</li>
+</ul>
+
+<h2>What We Clean</h2>
+<ul>
+  <li>Fabric seats (cloth, velour, microfiber)</li>
+  <li>Bench seats and captain's chairs</li>
+  <li>Seat backs and bolsters</li>
+  <li>Integrated headrests</li>
+  <li>Third-row seating</li>
+</ul>
+
+<h2>Stain Removal Expertise</h2>
+<p>We successfully remove most common stains including:</p>
+<ul>
+  <li>Coffee, soda, juice</li>
+  <li>Food and candy</li>
+  <li>Makeup and cosmetics</li>
+  <li>Grease and oil</li>
+  <li>Pet stains and odors</li>
+  <li>Mud and dirt</li>
+  <li>Ink and marker</li>
+</ul>
+
+<h2>Drying Time</h2>
+<p>Seats are typically dry within 2-6 hours depending on fabric type, humidity, and airflow. We use air movers to accelerate drying when possible.</p>
+
+<h2>Fabric Protection Available</h2>
+<p>After shampooing, consider our fabric protection treatment that repels liquids and makes future cleaning easier.</p>`,
+      keywords: [
+        'seat shampooing San Antonio',
+        'upholstery cleaning',
+        'car seat cleaning',
+        'fabric seat shampoo',
+        'stain removal seats',
+        'auto upholstery cleaning near me',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
+      faqs: [
+        {
+          question: 'Will shampooing remove all stains?',
+          answer:
+            'We remove most common stains successfully. Very old, set-in stains or permanent dye stains may not be fully removable. We\'ll assess stains during inspection.',
+        },
+        {
+          question: 'How long until seats are dry?',
+          answer:
+            'Typically 2-6 hours depending on fabric type and weather. We use high-powered air movers to speed drying. You can usually use your vehicle the same day.',
+        },
+        {
+          question: 'Do you clean leather seats?',
+          answer:
+            'Leather requires different cleaning methods. We offer professional leather cleaning and conditioning as a separate service. Shampooing is for fabric upholstery.',
+        },
+        {
+          question: 'Can you remove pet odors?',
+          answer:
+            'Yes! We use enzyme-based cleaners that break down organic compounds causing pet odors. For severe cases, we may recommend additional ozone treatment.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'steam-cleaning',
+      serviceName: 'Steam Cleaning',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Steam Cleaning San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional steam cleaning in San Antonio. Sanitize interior, deep clean surfaces, chemical-free cleaning. IDA Certified. Kill 99.9% bacteria. Call (726) 207-1007.',
+      h1: 'Professional Steam Cleaning Services in San Antonio',
+      introContent: `<p>Experience the power of professional steam cleaning. Our high-temperature steam sanitizes and deep cleans your vehicle's interior without harsh chemicals, killing 99.9% of bacteria, viruses, and germs while being completely safe for all surfaces.</p>`,
+      mainContent: `<h2>What is Steam Cleaning?</h2>
+<p>Steam cleaning uses superheated water vapor (typically 200-300°F) under pressure to clean, sanitize, and deodorize. The high heat kills bacteria and breaks down dirt without chemicals.</p>
+
+<h2>Benefits of Steam Cleaning</h2>
+<h3>Sanitization</h3>
+<p>Steam heat kills 99.9% of:</p>
+<ul>
+  <li>Bacteria (E. coli, Salmonella, Staph)</li>
+  <li>Viruses (including COVID-19)</li>
+  <li>Dust mites and allergens</li>
+  <li>Mold and mildew spores</li>
+  <li>Bed bugs and other pests</li>
+</ul>
+
+<h3>Chemical-Free Cleaning</h3>
+<ul>
+  <li>Safe for children and pets</li>
+  <li>No harsh chemical residue</li>
+  <li>Environmentally friendly</li>
+  <li>Safe for sensitive individuals</li>
+</ul>
+
+<h3>Deep Penetration</h3>
+<ul>
+  <li>Steam penetrates into pores and crevices</li>
+  <li>Lifts embedded dirt regular cleaning misses</li>
+  <li>Breaks down grease and grime naturally</li>
+  <li>Refreshes and deodorizes fabrics</li>
+</ul>
+
+<h2>What We Steam Clean</h2>
+<h3>Upholstery & Fabric</h3>
+<ul>
+  <li>Cloth seats and seat backs</li>
+  <li>Carpets and floor mats</li>
+  <li>Headliner and visors</li>
+  <li>Door panels and inserts</li>
+</ul>
+
+<h3>Hard Surfaces</h3>
+<ul>
+  <li>Dashboard and console</li>
+  <li>Door panels and armrests</li>
+  <li>Steering wheel and controls</li>
+  <li>Center console and cup holders</li>
+  <li>Windows and mirrors</li>
+</ul>
+
+<h3>Detailed Areas</h3>
+<ul>
+  <li>Air vents and grilles</li>
+  <li>Gaps and crevices</li>
+  <li>Between seats</li>
+  <li>Trunk and cargo areas</li>
+  <li>Door jambs</li>
+</ul>
+
+<h2>Our Steam Cleaning Process</h2>
+<h3>1. Pre-Vacuum</h3>
+<p>Remove loose dirt and debris before steam cleaning.</p>
+
+<h3>2. Steam Treatment</h3>
+<p>Systematic application of steam to all surfaces:</p>
+<ul>
+  <li>Appropriate nozzles for each surface type</li>
+  <li>Controlled temperature and pressure</li>
+  <li>Extraction of loosened dirt and moisture</li>
+  <li>Multiple passes on heavily soiled areas</li>
+</ul>
+
+<h3>3. Wiping & Drying</h3>
+<ul>
+  <li>Microfiber towels remove loosened dirt</li>
+  <li>Air circulation for faster drying</li>
+  <li>Final inspection and touch-up</li>
+</ul>
+
+<h2>Perfect For</h2>
+<ul>
+  <li>Allergy sufferers (removes allergens)</li>
+  <li>Families with small children</li>
+  <li>Pet owners (sanitizes after pets)</li>
+  <li>Rideshare drivers (frequent sanitization)</li>
+  <li>Anyone concerned about germs and bacteria</li>
+  <li>Those sensitive to chemical cleaners</li>
+</ul>
+
+<h2>Safe for All Surfaces</h2>
+<p>Our professional steam cleaners have adjustable temperature and pressure settings, making them safe for:</p>
+<ul>
+  <li>Leather (with reduced heat)</li>
+  <li>Vinyl and plastics</li>
+  <li>Fabric and carpeting</li>
+  <li>Electronics (with proper technique)</li>
+  <li>Glass and windows</li>
+</ul>`,
+      keywords: [
+        'steam cleaning San Antonio',
+        'car steam clean',
+        'auto sanitization',
+        'chemical-free car cleaning',
+        'interior steam cleaning',
+        'car disinfection near me',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
+      faqs: [
+        {
+          question: 'Does steam cleaning really kill germs?',
+          answer:
+            'Yes! Steam at 200-300°F kills 99.9% of bacteria, viruses, and germs on contact. This includes common pathogens like E. coli, Staph, and viruses including COVID-19.',
+        },
+        {
+          question: 'Will steam damage my interior?',
+          answer:
+            'No. Professional steam cleaners have adjustable settings. We use appropriate temperature and pressure for each surface type. Steam is safe for leather, fabric, vinyl, and plastics when used correctly.',
+        },
+        {
+          question: 'How long does steam cleaning take?',
+          answer:
+            'A complete interior steam cleaning typically takes 2-3 hours depending on vehicle size and condition.',
+        },
+        {
+          question: 'Will my car be wet after steam cleaning?',
+          answer:
+            'Steam uses minimal water, so surfaces dry quickly. Most areas are dry within 30 minutes to 2 hours. We use air circulation to speed drying.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'wheel-washing',
+      serviceName: 'Wheel Washing',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Wheel Washing San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional wheel washing in San Antonio. Brake dust removal, tire cleaning, wheel well detailing. IDA Certified. Restore wheel shine. Call (726) 207-1007.',
+      h1: 'Professional Wheel Washing Services in San Antonio',
+      introContent: `<p>Give your wheels the attention they deserve with our professional wheel washing service. We safely remove brake dust, road grime, and tar while protecting your wheel finish. Includes tire cleaning and wheel well detailing for a complete look.</p>`,
+      mainContent: `<h2>Complete Wheel Washing Service</h2>
+<p>Wheels accumulate brake dust, road tar, and grime faster than any other part of your vehicle. Our detailed process ensures spotless, protected wheels.</p>
+
+<h2>What's Included</h2>
+<h3>Wheel Face Cleaning</h3>
+<ul>
+  <li>pH-appropriate wheel cleaner for your finish type</li>
+  <li>Soft brushes for spokes and details</li>
+  <li>Iron-removing cleaner for brake dust</li>
+  <li>Scrubbing of all visible surfaces</li>
+  <li>Lug nut cleaning</li>
+</ul>
+
+<h3>Wheel Barrel Cleaning</h3>
+<ul>
+  <li>Long brushes reach inside wheel barrels</li>
+  <li>Remove hidden brake dust and grime</li>
+  <li>Clean weight balances and valve stems</li>
+  <li>Thorough rinse</li>
+</ul>
+
+<h3>Tire Cleaning</h3>
+<ul>
+  <li>Dedicated tire cleaner removes browning</li>
+  <li>Stiff brushes scrub tire sidewalls</li>
+  <li>Remove old tire dressing buildup</li>
+  <li>Clean white letters or raised lettering</li>
+  <li>Fresh tire dressing application</li>
+</ul>
+
+<h3>Wheel Well Cleaning</h3>
+<ul>
+  <li>Spray degreaser on fender liners</li>
+  <li>Brush cleaning of textured surfaces</li>
+  <li>High-pressure rinse removes caked dirt</li>
+  <li>Dressing application (optional)</li>
+</ul>
+
+<h2>Safe for All Wheel Types</h2>
+<p>We use appropriate products for each wheel finish:</p>
+
+<h3>Chrome Wheels</h3>
+<p>pH-neutral cleaners safe for chrome. No acidic products that cause pitting.</p>
+
+<h3>Polished Aluminum</h3>
+<p>Gentle cleaners that won't oxidize or dull polished surfaces.</p>
+
+<h3>Powder-Coated Wheels</h3>
+<p>pH-balanced products that won't damage coating.</p>
+
+<h3>Painted Wheels</h3>
+<p>Safe cleaners that won't strip paint or clear coat.</p>
+
+<h3>Matte/Satin Finishes</h3>
+<p>No gloss-enhancing products that would ruin matte appearance.</p>
+
+<h2>Brake Dust Removal</h2>
+<p>Brake dust is metallic and corrosive, bonding tightly to wheels. We use iron-removing cleaners that dissolve brake dust without aggressive scrubbing that can scratch wheels.</p>
+
+<h2>Tire Dressing Options</h2>
+<h3>Satin Finish (Recommended)</h3>
+<p>Natural-looking finish. Water-based formula won't sling onto paint. Lasts 2-4 weeks.</p>
+
+<h3>High-Gloss Finish</h3>
+<p>Wet-look shine for show vehicles. May require reapplication after rain.</p>
+
+<h2>Add-On Services</h2>
+<ul>
+  <li>Wheel polishing (for chrome/polished aluminum)</li>
+  <li>Wheel wax or sealant protection</li>
+  <li>Ceramic coating for wheels (long-term protection)</li>
+  <li>Tire shine</li>
+</ul>
+
+<h2>Maintenance Tips</h2>
+<ul>
+  <li>Rinse wheels first during washing</li>
+  <li>Clean wheels weekly to prevent buildup</li>
+  <li>Use dedicated wheel brushes (never the same as paint)</li>
+  <li>Apply tire dressing sparingly</li>
+  <li>Consider ceramic coating for easy maintenance</li>
+</ul>`,
+      keywords: [
+        'wheel washing San Antonio',
+        'professional wheel cleaning',
+        'brake dust removal',
+        'tire cleaning',
+        'wheel detailing',
+        'clean wheels near me',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Northeast Side', 'North Side', 'Medical Center'],
+      faqs: [
+        {
+          question: 'Will you scratch my wheels?',
+          answer:
+            'No. We use soft brushes designed specifically for wheels and pH-appropriate cleaners that dissolve brake dust without aggressive scrubbing. Different brush types for different finishes.',
+        },
+        {
+          question: 'How often should wheels be washed?',
+          answer:
+            'Weekly washing prevents brake dust from bonding permanently. For heavily used vehicles or performance cars with aggressive brake pads, twice weekly is better.',
+        },
+        {
+          question: 'Do you clean the inside of the wheels?',
+          answer:
+            'Yes! We clean both the wheel face (visible side) and the barrel (inside) using long-reach brushes to remove hidden brake dust and grime.',
+        },
+        {
+          question: 'Can you remove brake dust from chrome wheels?',
+          answer:
+            'Yes. We use pH-neutral, chrome-safe cleaners that dissolve brake dust without causing pitting or corrosion. Chrome requires special care.',
         },
       ],
       published: true,
@@ -347,265 +1477,56 @@ async function seedPillarPages(ctx: any): Promise<void> {
       createdAt: now,
       updatedAt: now,
     },
-    {
-      slug: 'interior-deep-cleansing',
-      serviceName: 'Interior Deep Cleansing',
-      serviceType: 'AutoRepair',
-      title: 'Interior Deep Cleansing San Antonio | Professional Car Interior Detailing',
-      metaDescription:
-        'Deep interior car cleaning in San Antonio. Steam cleaning, stain removal, odor elimination. IDA certified. Transform your vehicle interior. Call (726) 207-1007.',
-      h1: 'Professional Interior Deep Cleansing Services in San Antonio',
-      introContent: `<p>Restore your vehicle's interior to pristine condition with our comprehensive deep cleansing service. We use professional steam cleaning, specialized cleaners, and proven techniques to remove stains, eliminate odors, and sanitize every surface.</p>`,
-      mainContent: `<h2>Complete Interior Deep Cleansing</h2>
-<p>Our interior deep cleansing goes far beyond a basic vacuum. We meticulously clean, treat, and protect every interior surface using professional-grade equipment and products.</p>
-
-<h2>What's Included</h2>
-<h3>Seats & Upholstery</h3>
-<ul>
-  <li>Deep steam cleaning of fabric seats</li>
-  <li>Leather cleaning and conditioning</li>
-  <li>Stain removal (food, drinks, pet accidents)</li>
-  <li>Extraction cleaning for embedded dirt</li>
-</ul>
-
-<h3>Carpets & Floor Mats</h3>
-<ul>
-  <li>High-powered vacuum extraction</li>
-  <li>Hot water extraction shampooing</li>
-  <li>Stain treatment and removal</li>
-  <li>Odor neutralization</li>
-</ul>
-
-<h3>Dashboard & Console</h3>
-<ul>
-  <li>Detailed cleaning of all controls</li>
-  <li>UV protectant application</li>
-  <li>Vent cleaning and deodorizing</li>
-  <li>Screen and display cleaning</li>
-</ul>
-
-<h3>Door Panels & Trim</h3>
-<ul>
-  <li>Complete cleaning of all panels</li>
-  <li>Door jamb cleaning</li>
-  <li>Window and mirror cleaning</li>
-  <li>Protective dressing application</li>
-</ul>
-
-<h2>Professional Steam Cleaning</h2>
-<p>We use industrial-grade steam cleaners that sanitize and deep clean without harsh chemicals. Steam cleaning kills 99.9% of bacteria and germs while being safe for all interior surfaces.</p>
-
-<h2>Pet Hair & Odor Removal</h2>
-<p>Specialized tools and techniques for complete pet hair removal from carpets, seats, and hard-to-reach areas. Our enzyme-based odor eliminators permanently neutralize pet odors.</p>`,
-      keywords: [
-        'interior deep cleaning San Antonio',
-        'car interior detailing',
-        'steam cleaning car interior',
-        'stain removal car seats',
-        'interior car cleaning near me',
-        'auto interior detailing',
-      ],
-      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'North Side'],
-      faqs: [
-        {
-          question: 'How long does interior deep cleansing take?',
-          answer:
-            'A thorough interior deep cleansing typically takes 3-5 hours depending on vehicle size and condition. Heavily soiled interiors may require additional time.',
-        },
-        {
-          question: 'Can you remove pet hair and odors?',
-          answer:
-            'Yes! We specialize in pet hair removal using professional tools and techniques. Our enzyme-based cleaners permanently eliminate pet odors rather than masking them.',
-        },
-        {
-          question: 'Will steam cleaning damage my interior?',
-          answer:
-            'No, professional steam cleaning is safe for all interior surfaces including leather, fabric, vinyl, and plastics. We adjust temperature and pressure for each surface type.',
-        },
-        {
-          question: 'Do you remove tough stains?',
-          answer:
-            'We can remove most stains including coffee, soda, food, makeup, and ink. Some very old or set-in stains may require multiple treatments or may be permanent.',
-        },
-      ],
-      published: true,
-      createdAt: now,
-      updatedAt: now,
     },
+    // Auto Painting Category (5 services)
     {
-      slug: 'exterior-hand-wash-sealant',
-      serviceName: 'Exterior Hand Wash & Sealant',
+      slug: 'rock-chip-repair',
+      serviceName: 'Rock Chip Repair',
       serviceType: 'AutoRepair',
-      title: 'Exterior Hand Wash & Sealant San Antonio | Premium Car Wash',
+      title: 'IDA Certified Rock Chip Repair San Antonio, TX | One Detail At A Time',
       metaDescription:
-        'Premium hand wash and paint sealant in San Antonio. pH-neutral soap, clay bar, paint sealant. Safe for ceramic coatings. IDA certified. Call (726) 207-1007.',
-      h1: 'Professional Exterior Hand Wash & Sealant Service',
-      introContent: `<p>Experience the difference of a true hand wash. Our meticulous process safely removes dirt, grime, and contaminants while applying a protective sealant that keeps your vehicle looking great for months.</p>`,
-      mainContent: `<h2>Premium Hand Wash Process</h2>
-<p>Unlike automatic car washes that can scratch your paint, our hand wash process is completely safe and far more effective at removing contamination.</p>
+        'Professional rock chip repair in San Antonio. Fill and seal paint chips, prevent rust, color-matched repair. IDA Certified. Protect your investment. Call (726) 207-1007.',
+      h1: 'Professional Rock Chip Repair in San Antonio',
+      introContent: `<p>Don't let rock chips ruin your vehicle's appearance or lead to rust damage. Our professional rock chip repair service fills and seals chips to prevent corrosion while restoring your paint's smooth finish with color-matched materials.</p>`,
+      mainContent: `<h2>Why Repair Rock Chips Immediately</h2>
+<p>Exposed metal will rust quickly. Early repair prevents costly escalation and maintains your vehicle's value and appearance.</p>
 
-<h2>Our Hand Wash Includes</h2>
-<h3>Pre-Wash Treatment</h3>
+<h2>Our Rock Chip Repair Process</h2>
 <ul>
-  <li>Wheel and tire cleaning with dedicated brushes</li>
-  <li>Wheel well cleaning and degreasing</li>
-  <li>Bug and tar removal from front end</li>
-  <li>Pre-soak with pH-neutral foam</li>
-</ul>
-
-<h3>Two-Bucket Hand Wash</h3>
-<ul>
-  <li>Separate wash and rinse buckets with grit guards</li>
-  <li>Premium pH-neutral car shampoo</li>
-  <li>Microfiber wash mitts (never sponges)</li>
-  <li>Top-to-bottom washing technique</li>
-</ul>
-
-<h3>Clay Bar Treatment</h3>
-<ul>
-  <li>Removes embedded contaminants</li>
-  <li>Creates smooth-as-glass paint surface</li>
-  <li>Prepares paint for sealant</li>
-  <li>Safe for all paint types</li>
-</ul>
-
-<h3>Paint Sealant Application</h3>
-<ul>
-  <li>Synthetic polymer sealant</li>
-  <li>3-6 month protection</li>
-  <li>Hydrophobic water beading</li>
-  <li>UV protection</li>
-  <li>Enhanced gloss and shine</li>
-</ul>
-
-<h3>Final Details</h3>
-<ul>
-  <li>Tire dressing application</li>
-  <li>Window and glass cleaning (exterior)</li>
-  <li>Chrome and trim polishing</li>
-  <li>Final inspection</li>
-</ul>
-
-<h2>Safe for Ceramic Coatings</h2>
-<p>Our hand wash process is completely safe for ceramic-coated vehicles. We use pH-neutral soaps that won't strip or damage coatings.</p>
-
-<h2>Maintenance Wash Programs</h2>
-<p>Keep your vehicle looking its best with our maintenance wash programs. Regular washing every 2 weeks maintains protection and prevents contamination buildup.</p>`,
-      keywords: [
-        'hand wash San Antonio',
-        'exterior car wash',
-        'paint sealant',
-        'premium car wash',
-        'safe car wash',
-        'hand car wash near me',
-      ],
-      neighborhoods: ['Stone Oak', 'Northeast Side', 'North Side', 'Medical Center'],
-      faqs: [
-        {
-          question: 'How is hand washing better than automatic car washes?',
-          answer:
-            'Hand washing allows us to carefully clean each panel without the harsh brushes and chemicals used in automatic washes. We can address specific contaminants and never risk scratching your paint.',
-        },
-        {
-          question: 'How long does the sealant protection last?',
-          answer:
-            'Our synthetic paint sealant provides 3-6 months of protection depending on environmental factors and maintenance. Regular washing helps extend sealant life.',
-        },
-        {
-          question: 'Can you hand wash at my location?',
-          answer:
-            'Yes! We offer mobile hand wash services throughout San Antonio. We bring all necessary water, equipment, and supplies to your location.',
-        },
-        {
-          question: 'Is this safe for new or freshly painted vehicles?',
-          answer:
-            'Absolutely. Our pH-neutral products and microfiber towels are completely safe for new paint. We recommend waiting 30 days after repainting before applying sealant.',
-        },
-      ],
-      published: true,
-      createdAt: now,
-      updatedAt: now,
-    },
-    {
-      slug: 'headlight-restoration',
-      serviceName: 'Headlight Restoration',
-      serviceType: 'AutoRepair',
-      title: 'Headlight Restoration San Antonio | Clear Foggy Headlights',
-      metaDescription:
-        'Professional headlight restoration in San Antonio. Remove oxidation, yellowing, haze. Restore clarity and brightness. UV protection. Call (726) 207-1007.',
-      h1: 'Professional Headlight Restoration in San Antonio, TX',
-      introContent: `<p>Restore clarity and safety to your vehicle with professional headlight restoration. Our multi-stage process removes oxidation, yellowing, and haze while applying UV protection to prevent future damage.</p>`,
-      mainContent: `<h2>Why Restore Your Headlights?</h2>
-<h3>Safety</h3>
-<p>Foggy or yellowed headlights can reduce visibility by up to 80%, creating a serious safety hazard for night driving. Restoration restores full brightness and beam pattern.</p>
-
-<h3>Appearance</h3>
-<p>Cloudy headlights make even new vehicles look old and neglected. Crystal-clear headlights dramatically improve your vehicle's appearance.</p>
-
-<h3>Cost-Effective</h3>
-<p>Headlight restoration costs a fraction of replacement. New headlight assemblies can cost $200-$1000+ per side, while restoration is much more affordable.</p>
-
-<h2>Our Restoration Process</h2>
-<h3>1. Cleaning & Masking</h3>
-<p>Thorough cleaning and careful masking of surrounding paint to prevent damage during restoration.</p>
-
-<h3>2. Wet Sanding</h3>
-<p>Progressive wet sanding with 400, 800, 1500, and 2000-grit sandpaper removes oxidation and damaged layers.</p>
-
-<h3>3. Machine Polishing</h3>
-<p>Multi-stage polishing compounds restore optical clarity and remove sanding marks.</p>
-
-<h3>4. UV Protective Coating</h3>
-<p>Professional-grade UV sealant prevents future oxidation and yellowing. Lasts 1-3 years with proper maintenance.</p>
-
-<h2>What Causes Headlight Damage?</h2>
-<ul>
-  <li>UV radiation from sunlight</li>
-  <li>Oxidation from exposure to air</li>
-  <li>Road debris impact</li>
-  <li>Chemical exposure (cleaners, salt)</li>
-  <li>Heat from halogen bulbs</li>
-</ul>
-
-<h2>Results You Can See</h2>
-<p>Our restoration process typically improves clarity by 95%+ on plastic headlights. Results are immediate and dramatic - like upgrading to new headlights.</p>
-
-<h2>Maintenance Tips</h2>
-<ul>
-  <li>Wash headlights regularly with pH-neutral soap</li>
-  <li>Park in shade when possible</li>
-  <li>Reapply UV sealant every 12-18 months</li>
-  <li>Avoid harsh cleaners and abrasives</li>
+  <li>Color-matched touch-up paint application</li>
+  <li>Multiple thin layers for proper coverage</li>
+  <li>Clear coat protection</li>
+  <li>Wet sanding and polishing to blend</li>
 </ul>`,
       keywords: [
-        'headlight restoration San Antonio',
-        'clear foggy headlights',
-        'headlight cleaning',
-        'yellow headlight repair',
-        'headlight polishing',
-        'restore headlights near me',
+        'rock chip repair San Antonio',
+        'stone chip repair',
+        'paint chip fix',
+        'chip repair car',
+        'touch up paint chips',
+        'auto chip repair near me',
       ],
-      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Northwest Side', 'North Side'],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'North Side', 'Downtown'],
       faqs: [
         {
-          question: 'How long does headlight restoration take?',
+          question: 'How much does rock chip repair cost?',
           answer:
-            'Both headlights typically take 1-2 hours to fully restore depending on the level of oxidation and damage.',
+            'Cost depends on chip size and quantity. We provide free estimates and can repair multiple chips in one session for efficiency.',
         },
         {
-          question: 'How long will the restoration last?',
+          question: 'Will the repair be noticeable?',
           answer:
-            'With our UV protective coating, restoration typically lasts 1-3 years. Longevity depends on UV exposure and maintenance. Reapplication of UV sealant extends life.',
+            'Professional rock chip repair with proper color matching and blending makes repairs virtually invisible from normal viewing distance.',
         },
         {
-          question: 'Can severely damaged headlights be restored?',
+          question: 'How long does repair take?',
           answer:
-            'Most plastic headlights can be restored unless they have deep cracks or internal damage. We assess each headlight and provide honest recommendations.',
+            'Small chips take 30-60 minutes including drying time. Multiple chips or larger damage may require several hours.',
         },
         {
-          question: 'Will restoration work on glass headlights?',
+          question: 'Should I repair all chips or just the worst ones?',
           answer:
-            'Glass headlights don\'t oxidize like plastic, but we can polish them if scratched. Most modern vehicles have plastic/polycarbonate headlights which respond excellently to restoration.',
+            'We recommend repairing all chips that expose metal to prevent rust. Even small chips can lead to bigger problems.',
         },
       ],
       published: true,
@@ -613,80 +1534,158 @@ async function seedPillarPages(ctx: any): Promise<void> {
       updatedAt: now,
     },
     {
-      slug: 'engine-detailing',
-      serviceName: 'Engine Detailing',
+      slug: 'paint-transfer-removal',
+      serviceName: 'Paint Transfer Removal',
       serviceType: 'AutoRepair',
-      title: 'Engine Detailing San Antonio | Engine Bay Cleaning & Detailing',
+      title: 'IDA Certified Paint Transfer Removal San Antonio, TX | One Detail At A Time',
       metaDescription:
-        'Professional engine bay detailing in San Antonio. Safe steam cleaning, degreasing, dressing. Show-quality results. IDA certified. Call (726) 207-1007.',
-      h1: 'Professional Engine Bay Detailing in San Antonio',
-      introContent: `<p>Transform your engine bay with professional detailing. Our careful process safely removes grease, grime, and buildup while protecting sensitive components. Perfect for show cars or maintaining your investment.</p>`,
-      mainContent: `<h2>Engine Detailing Benefits</h2>
-<h3>Maintenance</h3>
-<p>A clean engine bay makes it easier to spot leaks, worn belts, and other maintenance issues before they become serious problems.</p>
-
-<h3>Resale Value</h3>
-<p>A detailed engine bay shows pride of ownership and can significantly increase resale value. Buyers notice a clean, well-maintained engine compartment.</p>
-
-<h3>Cooling Efficiency</h3>
-<p>Removing built-up grime and debris can improve cooling system efficiency by allowing better airflow.</p>
-
-<h3>Fire Prevention</h3>
-<p>Oil and grease buildup poses a fire risk. Regular engine detailing removes flammable materials from hot components.</p>
-
-<h2>Our Safe Engine Detailing Process</h2>
-<h3>1. Pre-Clean Inspection</h3>
-<p>We identify sensitive electrical components and ensure everything is cool before starting. Batteries, alternators, and exposed electronics are protected.</p>
-
-<h3>2. Pre-Treatment</h3>
-<p>Professional degreaser applied to heavily soiled areas. Allowed to dwell and break down grease and oil buildup.</p>
-
-<h3>3. Gentle Washing</h3>
-<p>Low-pressure rinse or steam cleaning (preferred). We never use high-pressure washers that can force water into electrical components.</p>
-
-<h3>4. Detailing</h3>
-<p>Brushes and specialized tools clean hard-to-reach areas. Attention to every wire, hose, and component.</p>
-
-<h3>5. Drying</h3>
-<p>Compressed air removes water from sensitive areas. Complete air drying before applying dressings.</p>
-
-<h3>6. Protection & Dressing</h3>
-<p>UV protectant applied to plastic and rubber components. Engine dressing for a factory-fresh appearance.</p>
-
-<h2>Safe for Modern Vehicles</h2>
-<p>Our process is completely safe for modern vehicles with complex electronics. We use steam cleaning and low-pressure methods specifically designed for sensitive components.</p>
-
-<h2>Show-Quality Results</h2>
-<p>Whether you're preparing for a car show or just want a pristine engine bay, we deliver concours-level results.</p>`,
+        'Professional paint transfer removal in San Antonio. Remove paint from other vehicles, parking lot scuffs. IDA Certified. Call (726) 207-1007.',
+      h1: 'Professional Paint Transfer Removal in San Antonio',
+      introContent: `<p>Remove unsightly paint transfer from other vehicles without damaging your original finish. Our safe removal process eliminates transferred paint from parking lot incidents while preserving your vehicle's paint underneath.</p>`,
+      mainContent: `<h2>Our Paint Transfer Removal Process</h2>
+<p>We use progressively stronger methods as needed:</p>
+<ul>
+  <li>Chemical removal solvents</li>
+  <li>Clay bar treatment</li>
+  <li>Machine polishing</li>
+  <li>Wet sanding (if needed)</li>
+</ul>`,
       keywords: [
-        'engine detailing San Antonio',
-        'engine bay cleaning',
-        'engine degreasing',
-        'clean engine compartment',
-        'engine bay detailing near me',
-        'professional engine cleaning',
+        'paint transfer removal San Antonio',
+        'remove paint scuffs',
+        'door ding paint removal',
+        'scuff mark removal',
+        'paint mark removal car',
+        'remove transferred paint',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
+      faqs: [
+        {
+          question: 'Can all paint transfer be removed?',
+          answer:
+            'Most paint transfer can be removed successfully if your clear coat is intact underneath.',
+        },
+        {
+          question: 'Will removal damage my paint?',
+          answer:
+            'Our process is designed to safely remove transferred paint without harming your original finish.',
+        },
+        {
+          question: 'How long does paint transfer removal take?',
+          answer:
+            'Simple paint transfer removal takes 30-60 minutes per area. More stubborn transfer may take 2-4 hours.',
+        },
+        {
+          question: 'What if there\'s a dent along with the paint transfer?',
+          answer:
+            'We can remove the paint transfer and address the dent with our dent repair service.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'touch-up-paint',
+      serviceName: 'Touch Up Paint',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Touch Up Paint San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional touch up paint service in San Antonio. Fix chips, scratches, minor damage. Color-matched. IDA Certified. Call (726) 207-1007.',
+      h1: 'Professional Touch Up Paint Services in San Antonio',
+      introContent: `<p>Restore your vehicle's finish with professional touch up paint service. Our color-matched, expertly applied touch ups repair chips and scratches while preventing rust.</p>`,
+      mainContent: `<h2>Our Touch Up Paint Process</h2>
+<ul>
+  <li>Exact color matching using factory paint codes</li>
+  <li>Proper surface preparation and priming</li>
+  <li>Professional paint application in thin layers</li>
+  <li>Clear coat protection</li>
+  <li>Wet sanding and polishing to blend</li>
+</ul>`,
+      keywords: [
+        'touch up paint San Antonio',
+        'car touch up',
+        'paint chip touch up',
+        'professional touch up paint',
+        'automotive touch up',
+        'car paint touch up near me',
+      ],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'North Side', 'Downtown'],
+      faqs: [
+        {
+          question: 'Will touch up paint match my car color exactly?',
+          answer:
+            'We use your vehicle\'s factory paint code and professional automotive paints for accurate color matching.',
+        },
+        {
+          question: 'How long does touch up paint last?',
+          answer:
+            'Professional touch up with proper primer and clear coat lasts as long as your original paint.',
+        },
+        {
+          question: 'Can you touch up scratches or just chips?',
+          answer:
+            'We can touch up both chips and scratches. Deeper scratches requiring touch up are filled and blended just like chips.',
+        },
+        {
+          question: 'How long until I can wash my car after touch up?',
+          answer:
+            'Wait 48-72 hours for paint to fully cure before washing.',
+        },
+      ],
+      published: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+    {
+      slug: 'wet-sanding',
+      serviceName: 'Wet Sanding',
+      serviceType: 'AutoRepair',
+      title: 'IDA Certified Wet Sanding San Antonio, TX | One Detail At A Time',
+      metaDescription:
+        'Professional wet sanding in San Antonio. Remove orange peel, level paint. IDA Certified. Show-car finish. Call (726) 207-1007.',
+      h1: 'Professional Wet Sanding Services in San Antonio',
+      introContent: `<p>Achieve a glass-smooth, show-quality finish with professional wet sanding. Our precise technique removes orange peel texture and creates the perfect surface for an incredible mirror-like shine.</p>`,
+      mainContent: `<h2>What is Wet Sanding?</h2>
+<p>Wet sanding uses ultra-fine sandpaper with water to level clear coat imperfections, remove orange peel, and prepare paint for final polishing to achieve show-car results.</p>
+
+<h2>What We Fix</h2>
+<ul>
+  <li>Orange peel texture</li>
+  <li>Paint runs and sags</li>
+  <li>Dirt nibs</li>
+  <li>Severe scratches</li>
+  <li>Water spot etching</li>
+</ul>`,
+      keywords: [
+        'wet sanding San Antonio',
+        'remove orange peel',
+        'paint leveling',
+        'show car finish',
+        'professional wet sanding',
+        'clear coat wet sanding',
       ],
       neighborhoods: ['Stone Oak', 'Alamo Heights', 'North Side', 'Medical Center'],
       faqs: [
         {
-          question: 'Is engine cleaning safe for modern cars with lots of electronics?',
+          question: 'Is wet sanding safe for my car paint?',
           answer:
-            'Yes! We use low-pressure methods and steam cleaning specifically designed for modern vehicles. Sensitive components are protected, and we never use high-pressure washers that can force water into electrical connections.',
+            'Yes, when done by professionals. We measure paint thickness to ensure safe removal.',
         },
         {
-          question: 'How often should I have my engine detailed?',
+          question: 'Will wet sanding remove all orange peel?',
           answer:
-            'For most vehicles, annual engine detailing is sufficient. Performance and show cars may benefit from more frequent detailing every 6 months.',
+            'We can significantly reduce orange peel, typically achieving 80-95% reduction.',
         },
         {
-          question: 'Can engine detailing find leaks?',
+          question: 'How long does wet sanding take?',
           answer:
-            'Yes! A clean engine makes it much easier to spot new leaks. After detailing, any fresh oil or fluid will be immediately visible against the clean surfaces.',
+            'Full-vehicle wet sanding takes 8-16 hours including sanding, compounding, and polishing.',
         },
         {
-          question: 'Will you damage any components?',
+          question: 'Can wet sanding be done on any car?',
           answer:
-            'No. Our technicians are trained to identify and protect sensitive components. We use appropriate cleaning methods for each area of the engine bay.',
+            'Only if there\'s sufficient clear coat thickness. We measure before proceeding.',
         },
       ],
       published: true,
@@ -694,445 +1693,111 @@ async function seedPillarPages(ctx: any): Promise<void> {
       updatedAt: now,
     },
     {
-      slug: 'window-tinting',
-      serviceName: 'Window Tinting',
+      slug: 'cut-and-buff',
+      serviceName: 'Cut and Buff',
       serviceType: 'AutoRepair',
-      title: 'Window Tinting San Antonio | Professional Auto Window Tint',
+      title: 'IDA Certified Cut and Buff San Antonio, TX | One Detail At A Time',
       metaDescription:
-        'Professional window tinting in San Antonio. Ceramic, carbon, dyed films. UV protection, heat rejection. Lifetime warranty. Legal compliance. Call (726) 207-1007.',
-      h1: 'Professional Auto Window Tinting in San Antonio, TX',
-      introContent: `<p>Protect your vehicle and passengers with professional window tinting. Our premium films block UV rays, reduce heat, enhance privacy, and improve your vehicle's appearance while maintaining Texas legal compliance.</p>`,
-      mainContent: `<h2>Window Tinting Benefits</h2>
-<h3>UV Protection</h3>
-<p>Quality window tint blocks 99% of harmful UV rays, protecting your skin and preventing interior fading and cracking.</p>
+        'Professional cut and buff in San Antonio. Remove scratches, swirls, oxidation. IDA Certified. Show-quality results. Call (726) 207-1007.',
+      h1: 'Professional Cut and Buff Services in San Antonio',
+      introContent: `<p>Restore your vehicle's paint to showroom condition with professional cut and buff service. Our multi-stage machine polishing removes scratches, swirls, and oxidation while bringing out incredible depth and shine.</p>`,
+      mainContent: `<h2>What is Cut and Buff?</h2>
+<p>Cut and buff is a two-stage paint correction process. "Cutting" uses abrasive compounds to remove defects, while "buffing" uses finer polishes to restore gloss.</p>
 
-<h3>Heat Rejection</h3>
-<p>Reduce interior temperature by up to 60% with ceramic tint. Less AC usage means better fuel economy and comfort.</p>
-
-<h3>Privacy & Security</h3>
-<p>Darker tint provides privacy and makes it harder for thieves to see valuables inside your vehicle.</p>
-
-<h3>Glare Reduction</h3>
-<p>Significantly reduce eye strain from sun glare while driving, improving safety and comfort.</p>
-
-<h3>Shatter Protection</h3>
-<p>Tint film holds glass together in an accident, reducing injury from flying glass shards.</p>
-
-<h2>Tint Film Options</h2>
-<h3>Ceramic Tint (Premium)</h3>
+<h2>What We Fix</h2>
 <ul>
-  <li>Superior heat rejection (up to 60%)</li>
-  <li>No signal interference (GPS, radio, cell)</li>
-  <li>Color-stable - won't purple or fade</li>
-  <li>Lifetime warranty</li>
-  <li>Best optical clarity</li>
-</ul>
-
-<h3>Carbon Tint (Mid-Tier)</h3>
-<ul>
-  <li>Good heat rejection (up to 40%)</li>
-  <li>Matte finish appearance</li>
-  <li>Color-stable</li>
-  <li>Lifetime warranty</li>
-  <li>No metallic content</li>
-</ul>
-
-<h3>Dyed Tint (Economy)</h3>
-<ul>
-  <li>Basic heat rejection (up to 20%)</li>
-  <li>Dark appearance for privacy</li>
-  <li>Budget-friendly option</li>
-  <li>5-year warranty</li>
-  <li>May fade over time</li>
-</ul>
-
-<h2>Texas Tint Laws</h2>
-<p>We ensure compliance with Texas window tint regulations:</p>
-<ul>
-  <li><strong>Front Windshield:</strong> 5" from top or AS-1 line</li>
-  <li><strong>Front Side Windows:</strong> Must allow 25%+ light transmission</li>
-  <li><strong>Back Side & Rear:</strong> Any darkness permitted</li>
-</ul>
-
-<h2>Professional Installation</h2>
-<p>Our installation process ensures bubble-free, perfect results:</p>
-<ol>
-  <li>Window deep cleaning</li>
-  <li>Precise computer-cut patterns</li>
-  <li>Clean room installation environment</li>
-  <li>Heat shrinking for perfect fit</li>
-  <li>Final inspection and cleaning</li>
-</ol>
-
-<h2>Lifetime Warranty</h2>
-<p>Our ceramic and carbon tints come with a lifetime warranty covering peeling, bubbling, discoloration, and adhesion failure.</p>`,
-      keywords: [
-        'window tinting San Antonio',
-        'car window tint',
-        'ceramic tint',
-        'auto tint near me',
-        'window tint shop',
-        'professional window tinting',
-      ],
-      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northwest Side'],
-      faqs: [
-        {
-          question: 'How long does window tinting take?',
-          answer:
-            'Most vehicles take 2-4 hours for complete installation. Larger vehicles or vehicles with many windows may take longer.',
-        },
-        {
-          question: 'When can I roll down windows after tinting?',
-          answer:
-            'Wait 3-5 days before rolling down windows to allow film to fully cure and adhere. We\'ll provide specific instructions based on weather conditions.',
-        },
-        {
-          question: 'Will tint affect my GPS or radio?',
-          answer:
-            'Ceramic and carbon tints have no metallic content and won\'t interfere with signals. Older metallic tints can cause interference, which is why we don\'t use them.',
-        },
-        {
-          question: 'What if my tint bubbles or peels?',
-          answer:
-            'Quality tint installed properly should never bubble or peel. Our lifetime warranty covers any defects or installation issues - we\'ll replace it free of charge.',
-        },
-      ],
-      published: true,
-      createdAt: now,
-      updatedAt: now,
-    },
-    {
-      slug: 'odor-removal',
-      serviceName: 'Odor Removal',
-      serviceType: 'AutoRepair',
-      title: 'Odor Removal San Antonio | Car Odor Elimination & Deodorizing',
-      metaDescription:
-        'Professional odor removal in San Antonio. Eliminate smoke, pet, mold, food odors. Ozone treatment, enzyme cleaners. Permanent results. Call (726) 207-1007.',
-      h1: 'Professional Vehicle Odor Removal in San Antonio',
-      introContent: `<p>Eliminate stubborn odors permanently with our professional odor removal service. Using ozone generators, enzyme treatments, and deep cleaning, we neutralize odors at the source rather than masking them.</p>`,
-      mainContent: `<h2>Common Vehicle Odors We Eliminate</h2>
-<ul>
-  <li>Cigarette and cigar smoke</li>
-  <li>Pet odors and accidents</li>
-  <li>Mold and mildew</li>
-  <li>Food and drink spills</li>
-  <li>Vomit and biological odors</li>
-  <li>Musty or stale smells</li>
-  <li>Chemical or fuel odors</li>
-</ul>
-
-<h2>Our Odor Removal Process</h2>
-<h3>1. Odor Source Identification</h3>
-<p>We locate the source of odors, which may be in carpets, seats, headliner, HVAC system, or trunk areas.</p>
-
-<h3>2. Deep Cleaning</h3>
-<p>Thorough cleaning of affected areas using appropriate methods:</p>
-<ul>
-  <li>Steam cleaning for fabric and carpet</li>
-  <li>Enzyme treatments for organic odors</li>
-  <li>HVAC system cleaning and deodorizing</li>
-  <li>Extraction cleaning for deep-set odors</li>
-</ul>
-
-<h3>3. Ozone Treatment</h3>
-<p>For severe odors, we use professional ozone generators that permanently oxidize odor-causing molecules.</p>
-
-<h3>4. Ventilation & Air Purification</h3>
-<p>HVAC system treatment and air purification ensure fresh, clean air circulation.</p>
-
-<h3>5. Prevention Treatment</h3>
-<p>Application of antimicrobial treatments to prevent future odor development.</p>
-
-<h2>Ozone Treatment Explained</h2>
-<p>Ozone (O₃) is a powerful oxidizing agent that destroys odor molecules at the molecular level. Unlike air fresheners that mask odors, ozone permanently eliminates them.</p>
-
-<h3>What Ozone Removes:</h3>
-<ul>
-  <li>Smoke and tar particles</li>
-  <li>Bacterial odors</li>
-  <li>Mold and mildew spores</li>
-  <li>Organic decomposition odors</li>
-  <li>Chemical smells</li>
-</ul>
-
-<h2>Smoke Odor Removal</h2>
-<p>Cigarette smoke is one of the most difficult odors to remove. Our comprehensive process includes:</p>
-<ul>
-  <li>Complete interior cleaning to remove tar residue</li>
-  <li>Headliner shampooing (smoke rises and settles on ceiling)</li>
-  <li>HVAC system decontamination</li>
-  <li>Ozone treatment to oxidize remaining smoke particles</li>
-  <li>Air filter replacement</li>
-</ul>
-
-<h2>Pet Odor Removal</h2>
-<p>Pet accidents and odors require enzyme-based cleaners that break down organic compounds:</p>
-<ul>
-  <li>UV light inspection to locate all affected areas</li>
-  <li>Enzyme treatment to break down urine crystals</li>
-  <li>Deep extraction to remove waste products</li>
-  <li>Antimicrobial treatment to prevent bacteria growth</li>
-</ul>
-
-<h2>Guaranteed Results</h2>
-<p>We guarantee odor elimination or we'll retreat the vehicle at no charge. Most odors are completely eliminated in one treatment.</p>`,
-      keywords: [
-        'odor removal San Antonio',
-        'car odor elimination',
-        'smoke odor removal',
-        'pet odor removal car',
-        'ozone treatment',
-        'car deodorizing near me',
-      ],
-      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side'],
-      faqs: [
-        {
-          question: 'How long does odor removal take?',
-          answer:
-            'Most odor removal takes 4-8 hours including cleaning and ozone treatment. Severe cases may require overnight ozone treatment for best results.',
-        },
-        {
-          question: 'Is ozone treatment safe?',
-          answer:
-            'Yes, when performed by professionals. The vehicle is unoccupied during treatment and thoroughly ventilated before return. Ozone naturally converts back to oxygen.',
-        },
-        {
-          question: 'Will the odor come back?',
-          answer:
-            'No, if we\'ve eliminated the source. Ozone permanently destroys odor molecules. If the source (like hidden mold) isn\'t removed, odors can return, which is why we locate and treat the source.',
-        },
-        {
-          question: 'Can you remove smoke smell from a car?',
-          answer:
-            'Yes! Smoke odor is one of our specialties. Our combination of deep cleaning, tar removal, and ozone treatment permanently eliminates smoke smell.',
-        },
-      ],
-      published: true,
-      createdAt: now,
-      updatedAt: now,
-    },
-    {
-      slug: 'scratch-swirl-removal',
-      serviceName: 'Scratch & Swirl Removal',
-      serviceType: 'AutoRepair',
-      title: 'Scratch & Swirl Removal San Antonio | Paint Defect Correction',
-      metaDescription:
-        'Expert scratch and swirl removal in San Antonio. Machine polishing, wet sanding, paint correction. Remove defects permanently. IDA certified. Call (726) 207-1007.',
-      h1: 'Professional Scratch & Swirl Removal in San Antonio, TX',
-      introContent: `<p>Remove scratches, swirl marks, and paint defects with our expert correction services. Using professional machine polishing and proven techniques, we permanently remove defects to restore your paint's clarity and depth.</p>`,
-      mainContent: `<h2>Paint Defects We Correct</h2>
-<h3>Swirl Marks</h3>
-<p>Circular scratches caused by improper washing techniques, automatic car washes, or dirty towels. Most visible on dark-colored vehicles in direct sunlight.</p>
-
-<h3>Scratches</h3>
-<ul>
-  <li>Light surface scratches (in clear coat only)</li>
-  <li>Key scratches and vandalism marks</li>
-  <li>Parking lot scratches</li>
-  <li>Automatic car wash scratches</li>
-  <li>Branch and bush scratches</li>
-</ul>
-
-<h3>Other Defects</h3>
-<ul>
-  <li>Water spots and etching</li>
+  <li>Swirl marks</li>
+  <li>Scratches</li>
+  <li>Oxidation</li>
+  <li>Water spots</li>
   <li>Bird dropping etching</li>
-  <li>Hologramming from previous poor polishing</li>
-  <li>Buffer trails</li>
-  <li>Orange peel texture</li>
-  <li>Paint oxidation</li>
-</ul>
-
-<h2>Our Correction Process</h2>
-<h3>Paint Inspection</h3>
-<p>We assess your paint under high-intensity LED lighting to identify all defects. Paint thickness is measured to ensure safe correction.</p>
-
-<h3>Decontamination</h3>
-<p>Clay bar treatment removes embedded contaminants that would cause new scratches during polishing.</p>
-
-<h3>Machine Polishing</h3>
-<p>Multi-stage polishing removes defects:</p>
-<ul>
-  <li><strong>Compounding:</strong> Aggressive cut to remove deeper scratches</li>
-  <li><strong>Polishing:</strong> Medium cut to refine and remove haze</li>
-  <li><strong>Finishing:</strong> Ultra-fine polish for maximum gloss</li>
-</ul>
-
-<h3>Paint Protection</h3>
-<p>After correction, we recommend ceramic coating or quality sealant to protect your newly perfected paint.</p>
-
-<h2>Scratch Types & What We Can Fix</h2>
-<h3>Clear Coat Scratches (✓ Can Remove)</h3>
-<p>Most scratches only affect the clear coat layer. These can be completely removed through polishing without compromising paint integrity.</p>
-
-<h3>Base Coat Scratches (~ Partial Improvement)</h3>
-<p>Deeper scratches reaching the color layer can be minimized but not fully removed. May require wet sanding or touch-up paint.</p>
-
-<h3>Primer/Metal Scratches (✗ Need Repainting)</h3>
-<p>Very deep scratches exposing primer or metal require professional repainting. We can polish surrounding areas to blend repairs.</p>
-
-<h2>Tools & Products We Use</h2>
-<ul>
-  <li>Dual-action and rotary polishers</li>
-  <li>Professional-grade compounds and polishes</li>
-  <li>Lake Country and Meguiar's pads</li>
-  <li>Paint depth gauge for safe correction</li>
-  <li>LED inspection lights</li>
-</ul>
-
-<h2>Maintenance After Correction</h2>
-<p>Protect your investment:</p>
-<ul>
-  <li>Use proper two-bucket wash method</li>
-  <li>Never use automatic car washes</li>
-  <li>Dry with quality microfiber towels</li>
-  <li>Apply ceramic coating or wax protection</li>
-  <li>Park in shade when possible</li>
+  <li>Dullness</li>
 </ul>`,
       keywords: [
-        'scratch removal San Antonio',
-        'swirl removal',
-        'remove swirls',
-        'scratch repair car',
-        'paint correction San Antonio',
-        'remove scratches car',
+        'cut and buff San Antonio',
+        'paint correction',
+        'compounding and polishing',
+        'remove swirls and scratches',
+        'professional buffing',
+        'auto paint restoration',
       ],
-      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Downtown', 'North Side'],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'North Side', 'Downtown'],
       faqs: [
         {
-          question: 'Can all scratches be removed?',
+          question: 'What\'s the difference between cut and buff and regular buffing?',
           answer:
-            'We can remove scratches that are in the clear coat only. Deeper scratches that reach the base coat, primer, or metal may require touch-up paint or repainting.',
+            'True cut and buff is a two-step process with cutting compound followed by finishing polish, providing much better defect removal.',
         },
         {
-          question: 'How do you determine if a scratch can be removed?',
+          question: 'Will cut and buff remove all scratches?',
           answer:
-            'We use the fingernail test and paint depth gauges. If your fingernail doesn\'t catch in the scratch, it can likely be polished out. We measure clear coat thickness to ensure safe removal.',
+            'We remove scratches that are in the clear coat only (90-95% of defects).',
         },
         {
-          question: 'Will polishing thin my clear coat too much?',
+          question: 'How often can cut and buff be done?',
           answer:
-            'No. We measure paint thickness before and during correction. Modern clear coats are typically 40-60 microns thick. We typically remove only 1-3 microns per stage, leaving plenty of clear coat.',
+            'With proper technique, cut and buff can be done 2-3 times over a vehicle\'s life.',
         },
         {
-          question: 'How long do results last?',
+          question: 'How long does cut and buff last?',
           answer:
-            'Correction results are permanent - the scratches are physically removed. However, new scratches can occur from washing or environmental factors. Ceramic coating helps prevent new defects.',
+            'Results are permanent - defects are physically removed. However, new scratches can occur from improper washing.',
         },
       ],
       published: true,
       createdAt: now,
       updatedAt: now,
     },
+    // Auto Dent Removal Category (3 services)
     {
-      slug: 'leather-conditioning',
-      serviceName: 'Leather Conditioning',
+      slug: 'dent-removal-services',
+      serviceName: 'Dent Removal Services',
       serviceType: 'AutoRepair',
-      title: 'Leather Conditioning San Antonio | Auto Leather Care & Restoration',
+      title: 'IDA Certified Dent Removal San Antonio, TX | One Detail At A Time',
       metaDescription:
-        'Professional leather conditioning in San Antonio. Clean, condition, protect leather seats. Restore softness and prevent cracking. IDA certified. Call (726) 207-1007.',
-      h1: 'Professional Leather Conditioning & Care in San Antonio',
-      introContent: `<p>Restore and protect your leather interior with professional conditioning services. Our multi-step process cleans, conditions, and protects leather while restoring its natural softness and preventing cracking and fading.</p>`,
-      mainContent: `<h2>Why Leather Needs Conditioning</h2>
-<p>Leather is natural animal hide that requires moisture to stay supple. Without regular conditioning, leather will:</p>
+        'Professional dent removal in San Antonio. Paintless dent repair, door dings, hail damage. IDA Certified. Restore factory finish. Call (726) 207-1007.',
+      h1: 'Professional Dent Removal Services in San Antonio',
+      introContent: `<p>Remove dents and restore your vehicle's body panels with our professional dent removal services. We specialize in paintless dent repair (PDR) that removes dents without affecting your original factory paint.</p>`,
+      mainContent: `<h2>Types of Dents We Remove</h2>
 <ul>
-  <li>Dry out and become stiff</li>
-  <li>Develop cracks and tears</li>
-  <li>Fade from UV exposure</li>
-  <li>Lose its soft, luxurious feel</li>
-  <li>Absorb stains more easily</li>
+  <li>Door dings from parking lots</li>
+  <li>Hail damage</li>
+  <li>Minor collision dents</li>
+  <li>Shopping cart impacts</li>
+  <li>Creases and body lines</li>
 </ul>
 
-<h2>Our Leather Care Process</h2>
-<h3>1. Leather Inspection</h3>
-<p>We identify leather type, condition, and any damage requiring special treatment. Different leathers require different care products.</p>
-
-<h3>2. Deep Cleaning</h3>
-<p>pH-balanced leather cleaner removes:</p>
-<ul>
-  <li>Body oils and perspiration</li>
-  <li>Dirt and grime in grain texture</li>
-  <li>Dye transfer from clothing</li>
-  <li>Food and drink stains</li>
-</ul>
-
-<h3>3. Conditioning Treatment</h3>
-<p>Premium leather conditioner is massaged into the leather to:</p>
-<ul>
-  <li>Restore natural oils and moisture</li>
-  <li>Improve flexibility and softness</li>
-  <li>Prevent cracking and tearing</li>
-  <li>Enhance natural color depth</li>
-</ul>
-
-<h3>4. UV Protection</h3>
-<p>UV inhibitors protect against sun damage and fading, especially important in San Antonio's intense sunlight.</p>
-
-<h3>5. Finishing</h3>
-<p>Gentle buffing for even absorption and a natural, non-greasy finish.</p>
-
-<h2>Types of Leather We Service</h2>
-<h3>Aniline Leather (Premium/Exotic)</h3>
-<p>High-end leather with minimal finish. Requires gentle cleaning and special conditioners. Found in luxury vehicles.</p>
-
-<h3>Semi-Aniline Leather</h3>
-<p>Light protective coating with natural feel. Most common in luxury vehicles. Responds well to conditioning.</p>
-
-<h3>Pigmented/Protected Leather</h3>
-<p>Heavy protective coating on surface. Found in most vehicles. More resistant to stains but still needs conditioning.</p>
-
-<h3>Nappa Leather</h3>
-<p>Extremely soft, supple leather requiring specialized care. Common in high-end European vehicles.</p>
-
-<h2>Leather Restoration Services</h2>
-<p>For damaged leather, we offer:</p>
-<ul>
-  <li>Color restoration for faded leather</li>
-  <li>Crack and tear repair</li>
-  <li>Dye transfer removal</li>
-  <li>Scratch and scuff repair</li>
-  <li>Texture restoration</li>
-</ul>
-
-<h2>Maintenance Schedule</h2>
-<ul>
-  <li><strong>Cleaning:</strong> Monthly with pH-neutral cleaner</li>
-  <li><strong>Conditioning:</strong> Every 3-6 months</li>
-  <li><strong>Protection:</strong> Every 6 months (UV protectant)</li>
-  <li><strong>Professional Detail:</strong> Annually for deep treatment</li>
-</ul>
-
-<h2>Premium Products</h2>
-<p>We use only pH-balanced, leather-specific products that won't damage or discolor leather. Never harsh chemicals or petroleum-based products that dry out leather.</p>`,
+<h2>Paintless Dent Repair (PDR)</h2>
+<p>PDR is the process of removing dents from the inside of body panels without disturbing the paint. This method preserves your original factory finish and maintains vehicle value.</p>`,
       keywords: [
-        'leather conditioning San Antonio',
-        'leather seats cleaning',
-        'car leather care',
-        'leather restoration',
-        'condition leather seats',
-        'leather treatment near me',
+        'dent removal San Antonio',
+        'paintless dent repair',
+        'PDR San Antonio',
+        'door ding removal',
+        'auto dent repair',
+        'dent fix near me',
       ],
-      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'North Side'],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
       faqs: [
         {
-          question: 'How often should leather be conditioned?',
+          question: 'What is paintless dent repair?',
           answer:
-            'Every 3-6 months depending on climate and usage. San Antonio\'s hot, sunny climate can dry leather quickly, so we recommend conditioning every 3-4 months.',
+            'PDR removes dents by massaging the metal from behind the panel, preserving your original paint. No filling or repainting needed.',
         },
         {
-          question: 'Can you repair cracks in leather seats?',
+          question: 'Can all dents be removed with PDR?',
           answer:
-            'Small cracks can often be minimized with conditioning. Larger cracks require leather repair services including filler, dye matching, and texture restoration. We offer both services.',
+            'Most minor to moderate dents without paint damage can be removed with PDR. Deep creases or dents with cracked paint may require traditional bodywork.',
         },
         {
-          question: 'Will conditioning make my seats slippery or greasy?',
+          question: 'How long does dent removal take?',
           answer:
-            'No. Quality leather conditioners absorb into the leather and shouldn\'t leave a greasy surface. We buff seats after conditioning to ensure a natural, dry finish.',
+            'Simple door dings take 30-60 minutes. Multiple dents or hail damage may take several hours.',
         },
         {
-          question: 'Is leather conditioning safe for perforated seats?',
+          question: 'Will PDR affect my paint warranty?',
           answer:
-            'Yes, but requires careful application to avoid product buildup in perforations. Our technicians are experienced with perforated leather and use appropriate application methods.',
+            'No. PDR doesn\'t affect paint at all, so paint warranties remain intact.',
         },
       ],
       published: true,
@@ -1140,114 +1805,54 @@ async function seedPillarPages(ctx: any): Promise<void> {
       updatedAt: now,
     },
     {
-      slug: 'wheel-tire-detailing',
-      serviceName: 'Wheel & Tire Detailing',
+      slug: 'hail-damage-repairs',
+      serviceName: 'Hail Damage Repairs',
       serviceType: 'AutoRepair',
-      title: 'Wheel & Tire Detailing San Antonio | Professional Wheel Cleaning',
+      title: 'IDA Certified Hail Damage Repair San Antonio, TX | One Detail At A Time',
       metaDescription:
-        'Professional wheel and tire detailing in San Antonio. Remove brake dust, clean wheel wells, tire dressing. IDA certified. Call (726) 207-1007.',
-      h1: 'Professional Wheel & Tire Detailing in San Antonio',
-      introContent: `<p>Give your wheels the attention they deserve with our comprehensive wheel and tire detailing service. We remove brake dust, clean wheel wells, and apply protective dressings for a showroom finish.</p>`,
-      mainContent: `<h2>Complete Wheel & Tire Service</h2>
-<p>Wheels and tires are often the dirtiest parts of your vehicle, accumulating brake dust, road grime, and tar. Our detailed process ensures every surface is spotless.</p>
+        'Professional hail damage repair in San Antonio. Paintless dent repair for hail damage. IDA Certified. Insurance claims assistance. Call (726) 207-1007.',
+      h1: 'Professional Hail Damage Repair in San Antonio',
+      introContent: `<p>Restore your vehicle after hail damage with our professional repair services. We specialize in paintless dent repair for hail damage, working with insurance companies to make the process smooth and stress-free.</p>`,
+      mainContent: `<h2>Hail Damage Repair Services</h2>
+<p>San Antonio can experience severe hailstorms. Our PDR specialists can remove dozens or even hundreds of hail dents without repainting, preserving your vehicle's value.</p>
 
-<h2>What's Included</h2>
-<h3>Wheel Cleaning</h3>
+<h2>Our Process</h2>
 <ul>
-  <li>Brake dust removal with pH-appropriate cleaners</li>
-  <li>Spoke and barrel cleaning with detail brushes</li>
-  <li>Lug nut cleaning and detailing</li>
-  <li>Wheel face polishing (for polished/chrome wheels)</li>
-  <li>Protective sealant application</li>
-</ul>
-
-<h3>Tire Cleaning & Dressing</h3>
-<ul>
-  <li>Degreasing to remove browning and old dressing</li>
-  <li>Scrubbing with dedicated tire brushes</li>
-  <li>Tire lettering cleaning (white letters/raised lettering)</li>
-  <li>Premium water-based tire dressing</li>
-  <li>Natural satin or high-gloss finish options</li>
-</ul>
-
-<h3>Wheel Well Detailing</h3>
-<ul>
-  <li>Degreasing of wheel wells and fender liners</li>
-  <li>High-pressure cleaning to remove caked dirt</li>
-  <li>Brush cleaning of textured surfaces</li>
-  <li>Dressing application for protected finish</li>
-</ul>
-
-<h3>Brake Component Cleaning</h3>
-<ul>
-  <li>Visible brake caliper cleaning</li>
-  <li>Brake rotor edge cleaning</li>
-  <li>Lug bolt/stud cleaning</li>
-</ul>
-
-<h2>Wheel-Specific Care</h2>
-<h3>Chrome Wheels</h3>
-<p>Gentle cleaning and polishing to restore mirror shine. Chrome sealant prevents pitting and corrosion.</p>
-
-<h3>Polished Aluminum</h3>
-<p>Metal polish removes oxidation and restores bright finish. Protective sealant maintains shine.</p>
-
-<h3>Powder-Coated Wheels</h3>
-<p>pH-neutral cleaning preserves powder coating. Sealant protects against brake dust etching.</p>
-
-<h3>Painted Wheels</h3>
-<p>Safe cleaning products that won't damage wheel finish. Wax or sealant for protection.</p>
-
-<h3>Matte/Satin Wheels</h3>
-<p>Special care to preserve matte finish. No glossy products used.</p>
-
-<h2>Brake Dust Removal</h2>
-<p>Brake dust is metallic and corrosive, bonding to wheel surfaces. Our iron-removing cleaners dissolve brake dust without aggressive scrubbing that can scratch wheels.</p>
-
-<h2>Tire Dressing Options</h2>
-<h3>Satin Finish (Recommended)</h3>
-<p>Natural-looking finish that doesn't sling onto paint. Water-based formula lasts 2-4 weeks.</p>
-
-<h3>High-Gloss Finish</h3>
-<p>Wet-look shine for show vehicles. May require reapplication after rain or washing.</p>
-
-<h2>Maintenance Tips</h2>
-<ul>
-  <li>Rinse wheels first during washing to loosen brake dust</li>
-  <li>Use dedicated wheel brushes (never the same as paint)</li>
-  <li>Clean wheels every 2 weeks to prevent buildup</li>
-  <li>Apply tire dressing sparingly for longer life</li>
-  <li>Consider ceramic coating for easy maintenance</li>
+  <li>Complete damage assessment</li>
+  <li>Insurance documentation assistance</li>
+  <li>Paintless dent repair for all panels</li>
+  <li>Roof, hood, trunk, and body panel repair</li>
+  <li>Final inspection and quality check</li>
 </ul>`,
       keywords: [
-        'wheel detailing San Antonio',
-        'tire cleaning',
-        'brake dust removal',
-        'wheel cleaning near me',
-        'tire dressing',
-        'wheel well cleaning',
+        'hail damage repair San Antonio',
+        'hail dent removal',
+        'PDR hail damage',
+        'hail damage fix',
+        'auto hail repair',
+        'insurance hail claim',
       ],
-      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Northeast Side', 'North Side'],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
       faqs: [
         {
-          question: 'How do you prevent scratching wheels?',
+          question: 'Does insurance cover hail damage repair?',
           answer:
-            'We use soft brushes designed for wheels and pH-appropriate cleaners that dissolve brake dust without aggressive scrubbing. Different brush types for different wheel finishes.',
+            'Most comprehensive insurance policies cover hail damage. We work with all major insurance companies and can assist with claims.',
         },
         {
-          question: 'Will tire dressing sling onto my paint?',
+          question: 'How long does hail damage repair take?',
           answer:
-            'Our water-based satin dressing is formulated not to sling. We apply sparingly and allow proper dwell time before driving. High-gloss dressings have more potential for slinging.',
+            'Depends on severity. Minor hail damage takes 1-2 days. Severe damage with 100+ dents may take 3-5 days.',
         },
         {
-          question: 'Can you clean chrome wheels without pitting them?',
+          question: 'Will you work with my insurance?',
           answer:
-            'Yes. We use pH-neutral cleaners safe for chrome and avoid acidic wheel cleaners that can cause pitting. Chrome sealant provides additional protection.',
+            'Yes! We handle insurance documentation, provide estimates, and work directly with adjusters to ensure proper coverage.',
         },
         {
-          question: 'How often should wheels be detailed?',
+          question: 'Can all hail dents be repaired with PDR?',
           answer:
-            'Every 2 weeks minimum to prevent brake dust from bonding permanently. Monthly professional detailing keeps wheels in excellent condition.',
+            'Most hail dents can be repaired with PDR. Dents that cracked paint or are in inaccessible areas may require traditional repair.',
         },
       ],
       published: true,
@@ -1255,280 +1860,62 @@ async function seedPillarPages(ctx: any): Promise<void> {
       updatedAt: now,
     },
     {
-      slug: 'rv-boat-detailing',
-      serviceName: 'RV/Boat Detailing',
+      slug: 'ding-repairs',
+      serviceName: 'Ding Repairs',
       serviceType: 'AutoRepair',
-      title: 'RV & Boat Detailing San Antonio | Mobile RV Boat Cleaning',
+      title: 'IDA Certified Ding Repair San Antonio, TX | One Detail At A Time',
       metaDescription:
-        'Professional RV and boat detailing in San Antonio. Mobile service, oxidation removal, waxing, interior cleaning. IDA certified. Call (726) 207-1007.',
-      h1: 'Professional RV & Boat Detailing in San Antonio, TX',
-      introContent: `<p>Protect and maintain your RV or boat with our specialized detailing services. We come to you with professional equipment and products designed for large recreational vehicles and watercraft.</p>`,
-      mainContent: `<h2>Mobile RV & Boat Detailing</h2>
-<p>We bring full-service detailing to your location. No need to move your RV or boat - we service you at home, storage facility, or marina.</p>
-
-<h2>RV Detailing Services</h2>
-<h3>Exterior Detailing</h3>
+        'Professional ding repair in San Antonio. Remove door dings, parking lot damage. Paintless dent repair. IDA Certified. Quick service. Call (726) 207-1007.',
+      h1: 'Professional Ding Repair Services in San Antonio',
+      introContent: `<p>Don't let door dings ruin your vehicle's appearance. Our quick and affordable ding repair service uses paintless dent repair to remove parking lot dings and restore your panels to factory condition.</p>`,
+      mainContent: `<h2>Common Ding Locations</h2>
 <ul>
-  <li>Full hand wash of entire RV (roof to ground)</li>
-  <li>Oxidation removal and restoration</li>
-  <li>Decal cleaning and protection</li>
-  <li>Rubber roof cleaning and treatment</li>
-  <li>Fiberglass polishing and waxing</li>
-  <li>Aluminum siding restoration</li>
-  <li>Slide-out cleaning and lubrication</li>
-  <li>Window and windshield cleaning</li>
-  <li>Tire cleaning and dressing</li>
-  <li>Chrome polishing</li>
+  <li>Doors (most common)</li>
+  <li>Fenders</li>
+  <li>Quarter panels</li>
+  <li>Bumpers</li>
 </ul>
 
-<h3>Interior Detailing</h3>
+<h2>Our Ding Repair Process</h2>
 <ul>
-  <li>Vacuuming throughout (including slideouts)</li>
-  <li>Dashboard and console cleaning</li>
-  <li>Upholstery cleaning (fabric or leather)</li>
-  <li>Kitchen and bathroom cleaning</li>
-  <li>Cabinet cleaning and conditioning</li>
-  <li>Floor cleaning (carpet, vinyl, hardwood)</li>
-  <li>Window cleaning (interior)</li>
-  <li>Vent and fan cleaning</li>
+  <li>Assess ding location and depth</li>
+  <li>Access panel from behind</li>
+  <li>Use specialized PDR tools to massage metal</li>
+  <li>Restore panel to original shape</li>
+  <li>No painting or filling required</li>
 </ul>
 
-<h2>Boat Detailing Services</h2>
-<h3>Hull & Exterior</h3>
-<ul>
-  <li>Hull washing and scrubbing</li>
-  <li>Waterline stain removal</li>
-  <li>Oxidation removal on gelcoat</li>
-  <li>Compounding and polishing</li>
-  <li>Marine wax application</li>
-  <li>Metal polishing (stainless, aluminum)</li>
-  <li>Canvas and upholstery cleaning</li>
-  <li>Non-skid surface cleaning</li>
-</ul>
-
-<h3>Interior & Cabin</h3>
-<ul>
-  <li>Cabin cleaning and vacuuming</li>
-  <li>Teak cleaning and oiling</li>
-  <li>Vinyl and leather conditioning</li>
-  <li>Head (bathroom) cleaning and sanitizing</li>
-  <li>Galley (kitchen) cleaning</li>
-  <li>Instrument panel cleaning</li>
-  <li>Window and hatch cleaning</li>
-</ul>
-
-<h2>Specialized Treatments</h2>
-<h3>Oxidation Removal</h3>
-<p>RVs and boats suffer from severe oxidation due to constant UV exposure. We use marine-grade compounds to remove chalking and restore color.</p>
-
-<h3>Gelcoat Restoration</h3>
-<p>Multi-stage wet sanding and polishing brings faded gelcoat back to life. Removes scratches, stains, and weathering.</p>
-
-<h3>Teak Care</h3>
-<p>Proper cleaning and oiling of teak wood. Options for natural weathered look or restored golden finish.</p>
-
-<h3>Canvas & Vinyl</h3>
-<p>Specialized cleaners for marine canvas, vinyl, and upholstery. UV protectant treatment included.</p>
-
-<h2>Protective Coatings</h2>
-<h3>Marine Wax</h3>
-<p>UV-resistant marine wax provides 3-6 months of protection against sun, salt, and water.</p>
-
-<h3>Ceramic Coating</h3>
-<p>Long-term protection (2-5 years) with superior UV resistance and easy cleaning. Ideal for boats stored outdoors.</p>
-
-<h2>Preparation Services</h2>
-<ul>
-  <li>Pre-season detailing (ready for summer)</li>
-  <li>Post-season detailing (winterization prep)</li>
-  <li>Pre-sale detailing (maximize resale value)</li>
-  <li>After-purchase detailing (start fresh)</li>
-</ul>
-
-<h2>Why RVs & Boats Need Professional Detailing</h2>
-<ul>
-  <li>Larger surface area collects more dirt and oxidation</li>
-  <li>Constant UV exposure accelerates fading</li>
-  <li>Water exposure requires marine-grade products</li>
-  <li>Regular maintenance preserves value</li>
-  <li>Prevents costly repair from neglect</li>
-</ul>`,
+<h2>Fast Service</h2>
+<p>Most single dings can be repaired in 30-60 minutes. Mobile service available for your convenience.</p>`,
       keywords: [
-        'RV detailing San Antonio',
-        'boat detailing',
-        'mobile RV cleaning',
-        'boat waxing',
-        'RV washing near me',
-        'marine detailing',
+        'ding repair San Antonio',
+        'door ding removal',
+        'parking lot ding fix',
+        'remove door dings',
+        'ding removal near me',
+        'quick ding repair',
       ],
-      neighborhoods: ['Stone Oak', 'Northeast Side', 'Northwest Side', 'North Side'],
+      neighborhoods: ['Stone Oak', 'Alamo Heights', 'Medical Center', 'Northeast Side', 'North Side'],
       faqs: [
         {
-          question: 'Do you come to my location for RV/boat detailing?',
+          question: 'How much does ding repair cost?',
           answer:
-            'Yes! We provide mobile service throughout San Antonio. We bring all necessary water, power, and equipment to your home, storage facility, or marina.',
+            'Simple door dings typically range from affordable rates. Contact us for a free quote based on your specific damage.',
         },
         {
-          question: 'How long does RV or boat detailing take?',
+          question: 'Can you fix multiple dings?',
           answer:
-            'RV detailing typically takes 6-12 hours depending on size and condition. Boat detailing takes 4-10 hours. We can split work over multiple days if needed.',
+            'Yes! We can repair multiple dings in one appointment, often with volume discounts.',
         },
         {
-          question: 'Can you remove oxidation from my RV or boat?',
+          question: 'Will the ding repair be noticeable?',
           answer:
-            'Yes! Oxidation removal is one of our specialties. We use marine-grade compounds to remove chalking and restore color to fiberglass, gelcoat, and painted surfaces.',
+            'No. Properly performed PDR is invisible and maintains your factory paint and finish.',
         },
         {
-          question: 'How often should I have my RV or boat detailed?',
+          question: 'Do you offer mobile ding repair?',
           answer:
-            'At minimum, annual detailing before season starts. For maximum protection, detail in spring (pre-season) and fall (winterization). Monthly maintenance washes recommended during use.',
-        },
-      ],
-      published: true,
-      createdAt: now,
-      updatedAt: now,
-    },
-    {
-      slug: 'fleet-services',
-      serviceName: 'Fleet Services',
-      serviceType: 'AutoRepair',
-      title: 'Fleet Detailing Services San Antonio | Commercial Vehicle Detailing',
-      metaDescription:
-        'Professional fleet detailing in San Antonio. Commercial vehicle cleaning, scheduled maintenance, volume pricing. Keep your fleet looking professional. Call (726) 207-1007.',
-      h1: 'Professional Fleet Detailing Services in San Antonio',
-      introContent: `<p>Maintain a professional image with our comprehensive fleet detailing services. We offer scheduled maintenance, volume pricing, and flexible scheduling to keep your entire fleet looking pristine with minimal downtime.</p>`,
-      mainContent: `<h2>Fleet Detailing Solutions</h2>
-<p>Whether you have 3 vehicles or 300, we provide customized detailing programs that maintain your fleet's appearance while maximizing vehicle uptime.</p>
-
-<h2>Services for Fleet Vehicles</h2>
-<h3>Regular Maintenance Packages</h3>
-<ul>
-  <li>Exterior hand wash and dry</li>
-  <li>Interior vacuum and wipe-down</li>
-  <li>Window cleaning (inside and out)</li>
-  <li>Tire cleaning and dressing</li>
-  <li>Dashboard and console dusting</li>
-</ul>
-
-<h3>Deep Cleaning Services</h3>
-<ul>
-  <li>Complete interior shampooing</li>
-  <li>Stain and odor removal</li>
-  <li>Engine bay cleaning</li>
-  <li>Paint correction and buffing</li>
-  <li>Headlight restoration</li>
-  <li>Protective coating application</li>
-</ul>
-
-<h3>Specialized Fleet Services</h3>
-<ul>
-  <li>Delivery vehicle interior sanitization</li>
-  <li>Company decal cleaning and maintenance</li>
-  <li>Fleet graphics protection</li>
-  <li>DOT compliance cleaning</li>
-  <li>Pre-sale detailing for trade-ins</li>
-</ul>
-
-<h2>Fleet Types We Service</h2>
-<h3>Sales Fleets</h3>
-<p>Dealership vehicles, rental cars, and lease returns. Quick turnaround to maximize lot appeal and sales.</p>
-
-<h3>Delivery Fleets</h3>
-<p>Vans, box trucks, and delivery vehicles. Interior sanitization and exterior maintenance for professional appearance.</p>
-
-<h3>Service Fleets</h3>
-<p>Contractor vehicles, utility trucks, service vans. Heavy-duty cleaning for work vehicles exposed to harsh conditions.</p>
-
-<h3>Executive Fleets</h3>
-<p>Corporate sedans, limousines, executive vehicles. Premium detailing to maintain luxury appearance.</p>
-
-<h3>Municipal Fleets</h3>
-<p>Government vehicles, police cars, fire trucks. Specialized cleaning for emergency and municipal vehicles.</p>
-
-<h2>Fleet Program Benefits</h2>
-<h3>Scheduled Service</h3>
-<p>Set up recurring appointments that fit your schedule. Weekly, bi-weekly, or monthly service available.</p>
-
-<h3>Volume Pricing</h3>
-<p>Significant discounts based on fleet size and service frequency. The more vehicles, the better the rate.</p>
-
-<h3>Flexible Scheduling</h3>
-<ul>
-  <li>After-hours service to avoid business disruption</li>
-  <li>Weekend availability</li>
-  <li>Rotating schedules to maintain vehicle uptime</li>
-  <li>Emergency detailing available</li>
-</ul>
-
-<h3>On-Site Service</h3>
-<p>We come to your facility with all equipment and supplies. No need to take vehicles off-site.</p>
-
-<h3>Detailed Reporting</h3>
-<p>Track service history, costs, and condition notes for each vehicle. Helpful for maintenance records and resale documentation.</p>
-
-<h2>Custom Fleet Programs</h2>
-<p>Every fleet has unique needs. We create customized programs that include:</p>
-<ul>
-  <li>Specific service intervals based on usage</li>
-  <li>Priority vehicle identification</li>
-  <li>Specialized cleaning for vehicle type</li>
-  <li>Budget-conscious service tiers</li>
-  <li>Seasonal adjustment options</li>
-</ul>
-
-<h2>Why Fleet Detailing Matters</h2>
-<h3>Brand Image</h3>
-<p>Your vehicles are mobile billboards. Clean, well-maintained vehicles project professionalism and attention to detail.</p>
-
-<h3>Employee Morale</h3>
-<p>Drivers appreciate clean vehicles. A professional environment shows you value your team.</p>
-
-<h3>Resale Value</h3>
-<p>Regular detailing maintains vehicle condition, maximizing trade-in and resale values.</p>
-
-<h3>Safety</h3>
-<p>Clean windows and lights improve visibility. Interior cleaning reduces allergens and creates healthier work environment.</p>
-
-<h2>Fleet Detailing Pricing</h2>
-<p>Pricing based on:</p>
-<ul>
-  <li>Fleet size (3+ vehicles)</li>
-  <li>Service frequency</li>
-  <li>Vehicle types and sizes</li>
-  <li>Service level required</li>
-  <li>On-site vs. drop-off</li>
-</ul>
-
-<p>Contact us for a custom fleet quote. We'll assess your needs and provide transparent, competitive pricing.</p>`,
-      keywords: [
-        'fleet detailing San Antonio',
-        'commercial vehicle detailing',
-        'fleet cleaning services',
-        'business vehicle detailing',
-        'mobile fleet detailing',
-        'fleet washing San Antonio',
-      ],
-      neighborhoods: ['Stone Oak', 'Medical Center', 'Northwest Side', 'Northeast Side'],
-      faqs: [
-        {
-          question: 'What is the minimum fleet size for fleet pricing?',
-          answer:
-            'We offer fleet pricing for 3+ vehicles. Larger fleets receive more substantial discounts. Contact us for a custom quote based on your fleet size.',
-        },
-        {
-          question: 'Can you detail our fleet on-site?',
-          answer:
-            'Yes! We provide mobile fleet detailing at your business location. We bring all water, power, and equipment needed. This minimizes vehicle downtime and transportation costs.',
-        },
-        {
-          question: 'How do you handle scheduling for large fleets?',
-          answer:
-            'We create a rotating schedule that ensures all vehicles are serviced regularly while maintaining your operational needs. We can detail vehicles after hours or on weekends to avoid disrupting business.',
-        },
-        {
-          question: 'Do you provide reporting for fleet services?',
-          answer:
-            'Yes. We maintain detailed service records for each vehicle including date, services performed, condition notes, and costs. Perfect for maintenance tracking and budget management.',
+            'Yes! We can come to your home or office in the San Antonio area to repair dings on-site.',
         },
       ],
       published: true,
@@ -1536,7 +1923,6 @@ async function seedPillarPages(ctx: any): Promise<void> {
       updatedAt: now,
     },
   ];
-
   for (const page of pillarPages) {
     await ctx.db.insert('pillarPages', page);
   }
