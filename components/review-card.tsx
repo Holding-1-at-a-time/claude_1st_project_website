@@ -65,7 +65,11 @@ export function ReviewCard({
  */
 function StarRating({ rating }: { rating: number }): JSX.Element {
   return (
-    <div className="flex gap-0.5">
+    <div 
+      className="flex gap-0.5" 
+      role="img" 
+      aria-label={`Rating: ${rating} out of 5 stars`}
+    >
       {[1, 2, 3, 4, 5].map((star) => (
         <Star
           key={star}
@@ -73,6 +77,7 @@ function StarRating({ rating }: { rating: number }): JSX.Element {
             'h-4 w-4',
             star <= rating ? 'fill-yellow-400 text-yellow-400' : 'text-muted'
           )}
+          aria-hidden="true"
         />
       ))}
     </div>
