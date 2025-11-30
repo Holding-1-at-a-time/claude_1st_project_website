@@ -1,6 +1,8 @@
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Skeleton } from '@/components/ui/skeleton';
 import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -8,7 +10,7 @@ interface ServiceCardProps {
   slug: string;
   name: string;
   description: string;
-  icon?: React.ReactNode;
+  icon?: ReactNode;
   featured?: boolean;
   className?: string;
 }
@@ -66,22 +68,19 @@ export function ServiceCard({
 }
 
 /**
- * Render a skeleton placeholder for the ServiceCard while content is loading.
- *
- * Renders pulsing placeholders for the icon, title, description, and action area to match the ServiceCard layout.
- *
- * @returns A JSX element representing the service card loading skeleton.
+ * Service Card Skeleton for loading states
+ * Uses Skeleton primitive for consistency
  */
 export function ServiceCardSkeleton(): JSX.Element {
   return (
     <Card>
       <CardHeader>
-        <div className="mb-2 h-12 w-12 animate-pulse rounded-lg bg-muted"></div>
-        <div className="h-6 w-3/4 animate-pulse rounded bg-muted"></div>
-        <div className="h-4 w-full animate-pulse rounded bg-muted"></div>
+        <Skeleton className="mb-2 h-12 w-12 rounded-lg" />
+        <Skeleton className="h-6 w-3/4" />
+        <Skeleton className="h-4 w-full" />
       </CardHeader>
       <CardContent>
-        <div className="h-10 w-full animate-pulse rounded bg-muted"></div>
+        <Skeleton className="h-10 w-full" />
       </CardContent>
     </Card>
   );
