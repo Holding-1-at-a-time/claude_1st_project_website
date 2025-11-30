@@ -31,12 +31,6 @@ const SERVICES = [
   'fleet-services',
 ] as const;
 
-interface PillarPageProps {
-  params: Promise<{
-    service: string;
-  }>;
-}
-
 /**
  * Generate static params for all service pages
  * This enables static generation at build time
@@ -53,8 +47,12 @@ export async function generateStaticParams(): Promise<{ service: string }[]> {
 
 /**
  * Generate dynamic metadata for SEO
+ * Uses Next.js 16 PageProps helper for type inference
  */
-export async function generateMetadata({ params }: PillarPageProps): Promise<Metadata> {
+export async function generateMetadata(
+  props: PageProps<'/services/[service]'>
+): Promise<Metadata> {
+  const params = await props.params;
   const { service } = await params;
 
   // In production, fetch from Convex:
@@ -74,9 +72,13 @@ export async function generateMetadata({ params }: PillarPageProps): Promise<Met
 
 /**
  * Pillar Page Component (Server Component)
+ * Uses Next.js 16 PageProps helper with route type inference
  */
-export default async function PillarPage({ params }: PillarPageProps): Promise<JSX.Element> {
-  const { service } = await params;
+export default async function PillarPage(
+  props: PageProps<'/services/[service]'>
+): Promise<JSX.Element> {
+  const params = await props.params;
+  const { service } = params;
 
   // Validate service exists
   if (!SERVICES.includes(service as (typeof SERVICES)[number])) {

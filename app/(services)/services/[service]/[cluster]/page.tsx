@@ -14,13 +14,6 @@ import Link from 'next/link';
  * - Links to related clusters
  */
 
-interface ClusterPageProps {
-  params: Promise<{
-    service: string;
-    cluster: string;
-  }>;
-}
-
 /**
  * Generate static params for all cluster pages
  */
@@ -47,9 +40,13 @@ export async function generateStaticParams(): Promise<
 
 /**
  * Generate dynamic metadata
+ * Uses Next.js 16 PageProps helper for nested dynamic routes
  */
-export async function generateMetadata({ params }: ClusterPageProps): Promise<Metadata> {
-  const { service, cluster } = await params;
+export async function generateMetadata(
+  props: PageProps<'/services/[service]/[cluster]'>
+): Promise<Metadata> {
+  const params = await props.params;
+  const { service, cluster } = params;
 
   // In production, fetch from Convex:
   // const clusterPage = await convex.query(api.queries.clusterPages.getBySlug, {
@@ -74,9 +71,13 @@ export async function generateMetadata({ params }: ClusterPageProps): Promise<Me
 
 /**
  * Cluster Page Component (Server Component)
+ * Uses Next.js 16 PageProps helper with nested dynamic segments
  */
-export default async function ClusterPage({ params }: ClusterPageProps): Promise<JSX.Element> {
-  const { service, cluster } = await params;
+export default async function ClusterPage(
+  props: PageProps<'/services/[service]/[cluster]'>
+): Promise<JSX.Element> {
+  const params = await props.params;
+  const { service, cluster } = params;
 
   // In production, validate with Convex:
   // const clusterPage = await convex.query(api.queries.clusterPages.getBySlug, {

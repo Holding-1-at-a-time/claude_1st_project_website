@@ -1,15 +1,9 @@
-import type { ReactNode } from 'react';
-
-interface ServicesLayoutProps {
-  children: ReactNode;
-  modal?: ReactNode; // Parallel route slot for modals
-}
-
 /**
- * Services Layout with Parallel Route Support
- * Supports @modal slot for intercepted routes
+ * Services Layout using Next.js 16 LayoutProps helper
+ * Supports @modal parallel route slot for intercepted routes
  */
-export default function ServicesLayout({ children, modal }: ServicesLayoutProps): JSX.Element {
+export default function ServicesLayout(props: LayoutProps<'/services'>): JSX.Element {
+  const { children, modal } = props;
   return (
     <>
       {children}

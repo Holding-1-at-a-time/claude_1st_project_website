@@ -51,12 +51,12 @@ export const metadata: Metadata = {
   },
 };
 
-interface RootLayoutProps {
-  children: React.ReactNode;
-  modal?: React.ReactNode; // Parallel route slot for @modal
-}
-
-export default function RootLayout({ children, modal }: RootLayoutProps): JSX.Element {
+/**
+ * Root Layout using Next.js 16 LayoutProps helper
+ * Supports parallel route slot @modal
+ */
+export default function RootLayout(props: LayoutProps<'/'>): JSX.Element {
+  const { children, modal } = props;
   // Organization Schema.org JSON-LD
   const organizationSchema = {
     '@context': 'https://schema.org',

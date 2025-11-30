@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 /**
- * Full Booking Page
+ * Full Booking Page with searchParams support
  * Path: /booking
  *
  * This page is shown when:
@@ -19,9 +19,15 @@ export const metadata: Metadata = {
  *
  * When navigating from other pages via Link, the intercepted
  * route at @modal/(.)booking shows a modal instead.
+ *
+ * Supports ?service=slug for pre-selecting a service
  */
 
-function BookingContent(): JSX.Element {
+interface BookingContentProps {
+  serviceSlug?: string;
+}
+
+function BookingContent({ serviceSlug }: BookingContentProps): JSX.Element {
   return (
     <div className="mx-auto max-w-4xl">
       <div className="mb-8">
@@ -43,6 +49,18 @@ function BookingContent(): JSX.Element {
         <h2 className="mb-6 text-2xl font-semibold text-white">
           Full Booking Page
         </h2>
+
+        {serviceSlug && (
+          <div className="mb-6 rounded-lg bg-primary/10 p-4">
+            <p className="text-sm text-muted-foreground">Pre-selected Service:</p>
+            <p className="font-semibold text-primary">
+              {serviceSlug
+                .split('-')
+                .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                .join(' ')}
+            </p>
+          </div>
+        )}
 
         <div className="space-y-4 text-muted-foreground">
           <p>
@@ -125,11 +143,21 @@ function BookingContent(): JSX.Element {
   );
 }
 
-export default function BookingPage(): JSX.Element {
+/**
+ * Booking Page using Next.js 16 PageProps with searchParams
+ * Demonstrates dynamic rendering based on URL parameters
+ */
+export default async function BookingPage(
+  props: PageProps<'/booking'>
+): Promise<JSX.Element> {
+  const searchParams = await props.searchParams;
+  const serviceParam = searchParams.service;
+  const serviceSlug = typeof serviceParam === 'string' ? serviceParam : undefined;
+
   return (
     <main className="container mx-auto px-4 py-16">
       <Suspense fallback={<div>Loading...</div>}>
-        <BookingContent />
+        <BookingContent serviceSlug={serviceSlug} />
       </Suspense>
     </main>
   );
