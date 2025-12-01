@@ -46,7 +46,7 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4.1.17",
     "tailwindcss-animate": "^1.0.7",
-    "tsx": "^4.19.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.7.2"
   },
   "engines": {
