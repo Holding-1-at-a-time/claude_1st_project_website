@@ -26,3 +26,37 @@ export const track = mutation({
     return leadId;
   },
 });
+
+/**
+ * Submit contact form
+ * Tracks contact form submission as a lead
+ */
+export const submitContactForm = mutation({
+  args: {
+    name: v.string(),
+    email: v.string(),
+    phone: v.string(),
+    message: v.string(),
+  },
+  handler: async (ctx, args) => {
+    // Store as a lead with contact details in metadata
+    const leadId = await ctx.db.insert('leads', {
+      source: 'direct',
+      page: '/contact',
+      action: 'contact_form_submit',
+      timestamp: Date.now(),
+      metadata: {
+        service: undefined,
+        neighborhood: undefined,
+        userAgent: `Contact: ${args.name} | ${args.email} | ${args.phone} | ${args.message}`,
+      },
+    });
+
+    // In production, you would also:
+    // 1. Send email notification to business owner
+    // 2. Send confirmation email to customer
+    // 3. Integrate with CRM system
+
+    return { success: true, leadId };
+  },
+});
