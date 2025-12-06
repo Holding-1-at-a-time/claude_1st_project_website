@@ -71,10 +71,27 @@ export function ContactForm(): JSX.Element {
         phone: '',
         message: '',
       });
-      setIsSubmitted(true);
+import { useState, useEffect } from 'react';
 
-      // Hide success message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
+// ... rest of component code ...
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      // ... form submission logic ...
+      setIsSubmitted(true);
+    } catch (error) {
+      // ... error handling ...
+    }
+  };
+
+  // Auto-hide success message after 5 seconds
+  useEffect(() => {
+    if (isSubmitted) {
+      const timer = setTimeout(() => setIsSubmitted(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [isSubmitted]);
     } catch (error) {
       console.error('Error submitting contact form:', error);
       setErrors({ message: 'Failed to submit form. Please try again.' });
