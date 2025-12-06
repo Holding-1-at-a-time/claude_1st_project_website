@@ -119,7 +119,7 @@ export function ReviewsCarousel({ reviews }: ReviewsCarouselProps): JSX.Element 
 
               {/* Dots Indicator */}
               <div className="flex gap-2">
-                {Array.from({ length: Math.min(reviews.length, 5) }).map((_, index) => (
+                {Array.from({ length: reviews.length }).map((_, index) => (
                   <button
                     key={index}
                     onClick={() => {
@@ -127,7 +127,7 @@ export function ReviewsCarousel({ reviews }: ReviewsCarouselProps): JSX.Element 
                       setCurrentIndex(index);
                     }}
                     className={`h-2 w-2 rounded-full transition-all ${
-                      index === currentIndex % Math.min(reviews.length, 5)
+                      index === currentIndex
                         ? 'w-8 bg-primary'
                         : 'bg-muted-foreground/30'
                     }`}
