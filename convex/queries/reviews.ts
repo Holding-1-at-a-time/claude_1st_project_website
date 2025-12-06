@@ -65,3 +65,25 @@ export const getAll = query({
       .collect();
   },
 });
+
+/**
+ * Get reviews by minimum rating
+ */
+export const getByRating = query({
+  args: { minRating: v.number(), limit: v.optional(v.number()) },
+  handler: async (ctx, args) => {
+    const limit = args.limit ?? 20;
+
+    return await ctx.db
+      .query('reviews')
+      .withIndex('by_rating')
+      .filter((q) =>
+        q.and(
+          q.gte(q.field('rating'), args.minRating),
+          q.neq(q.field('publishedAt'), undefined)
+        )
+      )
+      .order('desc')
+      .take(limit);
+  },
+});
