@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
-import Link from 'next/link';
+import { BookingFormWrapper } from './booking-form-wrapper';
 
 export const metadata: Metadata = {
   title: 'Book Auto Detailing Service | One Detail At A Time',
@@ -12,140 +12,7 @@ export const metadata: Metadata = {
  * Full Booking Page with searchParams support
  * Path: /booking
  *
- * This page is shown when:
- * 1. User navigates directly to /booking
- * 2. User refreshes while on /booking
- * 3. User shares /booking URL
- *
- * When navigating from other pages via Link, the intercepted
- * route at @modal/(.)booking shows a modal instead.
- *
  * Supports ?service=slug for pre-selecting a service
- */
-
-interface BookingContentProps {
-  serviceSlug?: string;
-}
-
-function BookingContent({ serviceSlug }: BookingContentProps): JSX.Element {
-  return (
-    <div className="mx-auto max-w-4xl">
-      <div className="mb-8">
-        <h1 className="mb-4 text-4xl font-bold tracking-tight text-white">
-          Book Your Service
-        </h1>
-        <p className="text-lg text-muted-foreground">
-          Schedule your auto detailing appointment online or call us at{' '}
-          <a
-            href="tel:+17262071007"
-            className="font-semibold text-primary hover:underline"
-          >
-            (726) 207-1007
-          </a>
-        </p>
-      </div>
-
-      <div className="rounded-lg border border-border bg-card p-8">
-        <h2 className="mb-6 text-2xl font-semibold text-white">
-          Full Booking Page
-        </h2>
-
-        {serviceSlug && (
-          <div className="mb-6 rounded-lg bg-primary/10 p-4">
-            <p className="text-sm text-muted-foreground">Pre-selected Service:</p>
-            <p className="font-semibold text-primary">
-              {serviceSlug
-                .split('-')
-                .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-                .join(' ')}
-            </p>
-          </div>
-        )}
-
-        <div className="space-y-4 text-muted-foreground">
-          <p>
-            This is the <strong>full booking page</strong> shown when you navigate directly
-            to <code className="text-primary">/booking</code> or refresh the page.
-          </p>
-
-          <p>
-            When you navigate here from other pages (like service pages), you'll see a
-            modal instead thanks to the <strong>intercepted route</strong> pattern.
-          </p>
-
-          <div className="mt-8 rounded-lg bg-primary/10 p-6">
-            <h3 className="mb-4 text-lg font-semibold text-white">
-              Routing Patterns Demonstrated:
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                ✅ <strong>Full Page:</strong> <code>/booking/page.tsx</code>
-              </li>
-              <li>
-                ✅ <strong>Modal Intercept:</strong>{' '}
-                <code>/@modal/(.)booking/page.tsx</code>
-              </li>
-              <li>
-                ✅ <strong>Parallel Route:</strong> <code>@modal</code> slot
-              </li>
-              <li>
-                ✅ <strong>Route Groups:</strong> <code>(services)</code>,{' '}
-                <code>(marketing)</code>
-              </li>
-              <li>
-                ✅ <strong>Dynamic Routes:</strong>{' '}
-                <code>/services/[service]/[cluster]</code>
-              </li>
-            </ul>
-          </div>
-
-          <div className="mt-6">
-            <p className="mb-4 font-semibold text-white">Try These:</p>
-            <div className="flex flex-wrap gap-3">
-              <Link
-                href="/services/ceramic-coating"
-                className="rounded-lg border border-primary px-4 py-2 text-sm text-primary transition-colors hover:bg-primary/10"
-              >
-                Go to Service Page
-              </Link>
-              <Link
-                href="/services/ceramic-coating/benefits"
-                className="rounded-lg border border-primary px-4 py-2 text-sm text-primary transition-colors hover:bg-primary/10"
-              >
-                Go to Cluster Page
-              </Link>
-              <Link
-                href="/"
-                className="rounded-lg border border-border px-4 py-2 text-sm text-white transition-colors hover:border-primary"
-              >
-                Back to Home
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Booking Form Placeholder */}
-      <div className="mt-8 rounded-lg border border-dashed border-border p-8 text-center">
-        <p className="text-muted-foreground">
-          Full booking form component will be implemented here with:
-        </p>
-        <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-          <li>Service selection</li>
-          <li>Customer information</li>
-          <li>Vehicle details</li>
-          <li>Date/time picker</li>
-          <li>Form validation with Zod</li>
-          <li>Submission to Convex</li>
-        </ul>
-      </div>
-    </div>
-  );
-}
-
-/**
- * Booking Page using Next.js 16 PageProps with searchParams
- * Demonstrates dynamic rendering based on URL parameters
  */
 export default async function BookingPage(
   props: PageProps<'/booking'>
@@ -155,10 +22,55 @@ export default async function BookingPage(
   const serviceSlug = typeof serviceParam === 'string' ? serviceParam : undefined;
 
   return (
-    <main className="container mx-auto px-4 py-16">
-      <Suspense fallback={<div>Loading...</div>}>
-        <BookingContent serviceSlug={serviceSlug} />
-      </Suspense>
+    <main className="min-h-screen bg-background py-16">
+      <div className="container px-4">
+        <div className="mx-auto max-w-4xl">
+          {/* Header */}
+          <div className="mb-8 text-center">
+            <h1 className="mb-4 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
+              Book Your Service
+            </h1>
+            <p className="text-lg text-muted-foreground">
+              Schedule your auto detailing appointment online or call us at{' '}
+              <a
+                href="tel:+17262071007"
+                className="font-semibold text-primary hover:underline"
+              >
+                (726) 207-1007
+              </a>
+            </p>
+          </div>
+
+          {/* Booking Form */}
+          <div className="rounded-lg border border-border bg-card p-8 shadow-lg">
+            <Suspense fallback={<div className="text-center">Loading form...</div>}>
+              <BookingFormWrapper preselectedService={serviceSlug} />
+            </Suspense>
+          </div>
+
+          {/* Trust Indicators */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <svg className="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <span>IDA Certified Professionals</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+              <span>Satisfaction Guaranteed</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="h-5 w-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Same-Day Service Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
