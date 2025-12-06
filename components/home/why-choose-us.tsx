@@ -40,7 +40,7 @@ export function WhyChooseUs(): JSX.Element {
       icon: <TrendingUp className="h-8 w-8" />,
       title: 'Satisfaction Guaranteed',
       description:
-        'We stand behind our work. If you're not completely satisfied, we'll make it right.',
+        "We stand behind our work. If you're not completely satisfied, we'll make it right.",
     },
   ];
 
